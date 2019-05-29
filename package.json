@@ -1,0 +1,14 @@
+{
+  "name": "mypersonalsite",
+  "version": "1.0.0",
+  "description": "My personal site for my own works, resume, proof of skill, and just a nice snippet into what I can do!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
