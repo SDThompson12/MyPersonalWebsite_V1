@@ -1,6 +1,6 @@
 			<!-- jQuery CDN -->
        <script
-              src="http://code.jquery.com/jquery-3.3.1.js"
+              src="https://code.jquery.com/jquery-3.3.1.js"
               integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
               crossorigin="anonymous">
         </script>
@@ -8,5 +8,20 @@
         <!-- Bootstrap JS CDN -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
         </script>
+		
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$('#menuToggle').click(function()
+				{
+					$('nav').toggleClass('active');
+				})
+				$('ul li').click(function()
+				{
+					$(this).siblings().removeClass('active');
+					$(this).toggleClass("active");
+				})
+			})
+		</script>
     </body>
 </html>
