@@ -12,7 +12,7 @@ var mainHomePageRoute = require('./routes/mainPage.js');
 //Imports Routes
 app.use("/", mainHomePageRoute);
 
-app.listen(3000, function()
+app.listen(3152, function()
 {
     console.log("Starting My Personal Site server...");
 });

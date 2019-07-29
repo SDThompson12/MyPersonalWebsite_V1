@@ -25,8 +25,23 @@ header .logo
 	line-height: 50px;
 	font-size: 24px;
 	float: left;
-	font-weight: bold;
 	padding-top: 15px;
+	font-family: 'Teko', sans-serif;
+}
+
+#stPortion
+{
+	padding-left: 10px;
+}
+
+#jrPortion
+{
+	color: #ffffff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 10px;
+	padding-top: 15px;
+	font-family: 'Teko', sans-serif;
 }
 
 header nav
@@ -132,6 +147,107 @@ header nav ul li a.current
 	display: none;
 }
 
+h1
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding-top: 100px;
+	font-family: sans-serif;
+	color: #ffffff;
+	font-size: 40px;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.nameImage
+{
+	padding-left: 130px;
+}
+
+.landing-text
+{
+	text-align: center;
+	color: #ffffff;
+}
+
+.landing__header 
+{
+    font-weight: 800;
+    font-size: 4em;
+    margin-bottom: 10px;
+	letter-spacing: 2px;
+	bottom: -60px;
+}
+
+.landing__header, .landing__sub-header
+{
+	font-family: 'Roboto', sans-serif;
+    position: relative;
+	font-size: 3em;
+}
+
+.landing__sub-header
+{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 4px;
+	top: -10px;
+	font-weight: 100;
+}
+
+.landing__sub-header:after 
+{
+    bottom: -8px;
+}
+
+.landing__header:after, .landing__sub-header:after 
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 570px;
+    height: 4px;
+    width: 26%;
+    background: #727272;
+}
+
+.landing-featured
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	padding-bottom: 40px;
+}
+
+.roles
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+	color: #e6e6e6;
+}
+
+.y-center 
+{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+
+.column 
+{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.type
+{
+	font-size: 25px;
+}
+
 @media (max-width: 991px)
 {
 	header
@@ -178,6 +294,5 @@ header nav ul li a.current
 	header nav ul li ul li
 	{
 		width: 100%;
-	}
-	
+	}	
 }
