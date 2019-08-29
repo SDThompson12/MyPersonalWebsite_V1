@@ -308,6 +308,17 @@ section
 	color: #e6e6e6;
 }
 
+.infoSection
+{
+	width: 600px;
+	margin: 5px;
+	padding-left: 100px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	color: #e6e6e6;
+}
+
+
 .self-Image
 {
 	float: right;
