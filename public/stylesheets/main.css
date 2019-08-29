@@ -147,13 +147,16 @@ header nav ul li a.current
 	display: none;
 }
 
+container
+{
+	width: 100%;
+}
+
 h1
 {
-	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
-	text-align: center;
 	margin: 0;
 	padding-top: 100px;
 	font-family: sans-serif;
@@ -161,6 +164,42 @@ h1
 	font-size: 40px;
 	text-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
+
+section
+{
+	width: 100%;
+	height: 600px;
+}
+
+.section-header
+{
+	padding-left: 100px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
+}
+
+#cs-section:after 
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+	left: 90px;
+    height: 4px;
+    width: 31%;
+    background: #ffffff;
+}
+
+#film-section:after 
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+	left: 90px;
+    height: 4px;
+    width: 26%;
+    background: #ffffff;
+}
+
 
 .nameImage
 {
@@ -207,9 +246,9 @@ h1
     content: "";
     position: absolute;
     bottom: -10px;
-    left: 570px;
+    left: 365px;
     height: 4px;
-    width: 26%;
+    width: 36%;
     background: #727272;
 }
 
@@ -248,6 +287,32 @@ h1
 	font-size: 25px;
 }
 
+#me-section
+{
+	width: 600px;
+	height: 125px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding-left: 0;
+	font-size: 50px;
+}
+
+.bio
+{
+	float: right;
+	width: 600px;
+	margin: 5px;
+	padding-left: 100px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	color: #e6e6e6;
+}
+
+.self-Image
+{
+	float: right;
+	margin-top: 50px;
+}
 @media (max-width: 991px)
 {
 	header
