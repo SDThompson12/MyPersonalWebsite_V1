@@ -173,7 +173,6 @@ section
 
 .section-header
 {
-	padding-left: 100px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: lighter;
 }
@@ -183,7 +182,7 @@ section
     content: "";
     position: absolute;
     bottom: -10px;
-	left: 90px;
+	left: 0px;
     height: 4px;
     width: 31%;
     background: #ffffff;
@@ -194,7 +193,7 @@ section
     content: "";
     position: absolute;
     bottom: -10px;
-	left: 90px;
+	left: 0px;
     height: 4px;
     width: 26%;
     background: #ffffff;
@@ -310,7 +309,6 @@ section
 
 .infoSection
 {
-	width: 600px;
 	margin: 5px;
 	padding-left: 100px;
 	font-family: 'Roboto', sans-serif;
