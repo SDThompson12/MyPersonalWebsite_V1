@@ -32,6 +32,7 @@ header .logo
 	transition: 0.6s;
 	letter-spacing: 2px;
 	font-family: 'Teko', sans-serif;
+	text-shadow: 0 2px 5px rgba(255,0,0,2);
 }
 
 header ul
@@ -85,8 +86,6 @@ header nav ul li ul li
 	display: block;
 	width: 200px;
 }
-
-
  
 header nav ul li a
 {
@@ -137,18 +136,8 @@ header nav ul li a:hover
 header nav ul li a:hover,
 header nav ul li a.current
 {
-	color: #000000;
+	color: #A91101;
 	background: #ffffff;
-}
-
-#menuToggle
-{
-	color: #ffffff;
-	float: right;
-	line-height: 50px;
-	font-size: 24px;
-	cursor: pointer;
-	display: none;
 }
 
 container
@@ -166,8 +155,69 @@ h1
 	font-family: sans-serif;
 	color: #ffffff;
 	font-size: 40px;
-	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+	list-style: none;
 }
+
+/* ------------------------------- Side Column ---------------------------- */
+
+a:focus, a:hover
+{
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+a 
+{
+    color: #444;
+    text-decoration: none;
+}
+
+.side-selects
+{
+	width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: #444;
+	font-size: 25px;
+}
+
+.side-selects:after
+{
+	content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: #FFFFFF;
+    margin: 0px auto;
+}
+
+#instagramIcon:hover
+{
+	color: rgb(255,0,0)
+}
+
+.professional_Links
+{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.professional_Links li
+{
+	padding-bottom: 20px;
+}
+
+
+/* -------------------------------- Sections ------------------------------ */
+
 section
 {
 	width: 100%;
@@ -180,16 +230,80 @@ section
 	font-weight: lighter;
 }
 
-#cs-section:after 
+.infoSection
+{
+	margin-top: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	color: #e6e6e6;
+	text-shadow: none;
+}
+
+.infotext
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/* --------------------- Quote Section ----------------------- */
+
+.quote
+{
+	display: inline-block;
+	margin: 5px;
+	height: 600px;
+}
+
+#smaller-section
+{
+	margin-top: 55px;
+	margin-bottom: 40px;
+	padding-left: 30px;
+	font-size: 7vw;
+    line-height: 9vw;
+	letter-spacing: 2.5px;
+}
+
+#zero
+{
+	font-weight: lighter;
+	font-size: 26vw;
+    line-height: 23vw;
+	position: relative;
+}
+
+/* ---------------------- About Section ------------------------ */
+
+#about-section
+{
+	padding-left: 25px;
+}
+
+#about-section:before 
+{
+    content: ">";
+    position: absolute;
+    bottom: 42px;
+    left: 0px;
+    height: 4px;
+    width: 0%;
+	color: #FF0000;
+    background: #ffffff;
+}
+
+#about-section:after 
 {
     content: "";
     position: absolute;
-    bottom: -10px;
-	left: 0px;
+    bottom: 20px;
+    left: 215px;
     height: 4px;
-    width: 31%;
-    background: #ffffff;
+    width: 48%;
+    background: #FF0000;
 }
+
+/* ------------------ Where I've Worked Section -------------------- */
 
 #film-section:after 
 {
@@ -202,14 +316,7 @@ section
     background: #ffffff;
 }
 
-
-/* .nameImage
-
-{
-	padding-left: 130px;
-} 
-
-*/
+/* ---------------- Introduction ---------------- */
 
 .landing-text
 {
@@ -227,6 +334,7 @@ section
     margin-bottom: 10px;
 	letter-spacing: 2px;
 	bottom: -60px;
+	text-shadow: none;
 }
 
 .landing__header, .landing__sub-header
@@ -304,42 +412,19 @@ section
 	font-size: 25px;
 }
 
-#me-section
-{
-	width: 600px;
-	height: 125px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	padding-left: 0;
-	font-size: 50px;
-}
 
-.bio
+/* ----------------------------  Responsive CSS -----------------------------*/
+#menuToggle
 {
+	color: #FFFFFF;
 	float: right;
-	width: 600px;
-	margin: 5px;
-	padding-left: 100px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: lighter;
-	color: #e6e6e6;
-}
-
-.infoSection
-{
-	margin: 5px;
-	padding-left: 100px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: lighter;
-	color: #e6e6e6;
+	line-height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
 }
 
 
-.self-Image
-{
-	float: right;
-	margin-top: 50px;
-}
 @media (max-width: 991px)
 {
 	header
@@ -363,7 +448,7 @@ section
 	
 	header nav.active
 	{
-		Left: 0;
+		left: 0;
 	}
 	
 	header nav ul
