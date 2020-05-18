@@ -25,10 +25,40 @@
 					$(this).siblings().removeClass('active');
 					$(this).toggleClass("active");
 				})
-			})
-		</script>
+			});
+	</script>
 	
-		<script>		
+	<script>
+	function viewExperience(event, experienceNum) 
+		{
+  		// Declare all variables
+  			var i, tabcontent, experienceButton;
+		
+  		// Get all elements with class="tab-content" and hide them
+  			tabcontent = document.getElementsByClassName("tab-content");
+  				for (i = 0; i < tabcontent.length; i++) 
+				{
+    				tabcontent[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							tabcontent[i].style.display = 'block';
+						}
+  				}
+
+ 		// Get all elements with class="experienceButton" and remove the class "active"
+  			experienceButton = document.getElementsByClassName("experienceButton");
+  				for (i = 0; i < experienceButton.length; i++) 
+				{
+    				experienceButton[i].className = experienceButton[i].className.replace(" active", "");
+  				}
+
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  			document.getElementById(experienceNum).style.display = "block";
+ 				event.currentTarget.className += " active";
+		} 
+	</script>
+
+	<script>		
 		var typed = new Typed(".type", 
 		{
   			strings: ["I am currently a Senior at Clayton State University.", "Pursuing a double major in Film Prod. and CS.", "Goals of becoming a CGI / VFX Artist", "However, that won't stop me from learning the many other things I'm interested in!"],
@@ -37,6 +67,6 @@
 			loop: true,
 			showCursor: false
 		});
-		</script>
+	</script>
     </body>
 </html>

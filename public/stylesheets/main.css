@@ -349,16 +349,197 @@ section
 
 /* ------------------ Where I've Worked Section -------------------- */
 
-#film-section:after 
+#experience-section
+{
+	padding-left: 25px;
+}
+
+#experience-section:before 
+{
+    content: ">";
+    position: absolute;
+    bottom: 42px;
+    left: 0px;
+    height: 4px;
+    width: 0%;
+	color: #FF0000;
+    background: #ffffff;
+}
+
+#experience-section:after 
 {
     content: "";
     position: absolute;
-    bottom: -10px;
-	left: 0px;
+    bottom: 20px;
+    left: 410px;
     height: 4px;
-    width: 26%;
+    width: 31%;
+    background: #FF0000;
+}
+
+.experienceTabs
+{
+    display: block;
+    position: relative;
+    width: max-content;
+    z-index: 3;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.experienceTabs:hover, .experienceTabs li:active
+{
+	color: #FF0000;
+}
+
+.experienceTabs li
+{
+	padding-top: 20px;
+}
+
+.experienceButton
+{
+	text-decoration-skip-ink: auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 42px;
+    text-align: left;
+    white-space: nowrap;
+    font-family: "Roboto Mono";
+    font-size: 13px;
+    color: #e6e6e6;
+    text-decoration: none;
+    padding: 0px 20px 2px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+.experienceButton:hover
+{
+	color: #FF0000;
+	background-color: #e6e6e6;
+}
+
+.tab
+{
+	float:left;	
+}
+
+.tab-content 
+{
+ 	display: none;
+ 	padding: 6px 12px;
+ 	float: left;
+}
+
+.tab-content h3
+{
+	font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+	color: #FFFFFF;
+}
+
+.experienceNotes
+{
+	font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+	color: #e6e6e6;
+	float: left;
+	padding-top: 20px;
+	letter-spacing: 1px;
+}
+
+.experienceNotes p
+{
+	padding: 10px 0px 10px 15px;
+}
+
+.experienceNotes p:before
+{
+	content: ">";
+    position: absolute;
+    left: 0px;
+    height: 4px;
+    width: 0%;
+	color: #FF0000;
     background: #ffffff;
 }
+
+img
+{
+	width: 125px;
+	height: 125px;
+	float: left;
+}
+
+.experienceTitle
+{
+	padding-left: 20px;
+	float: left;
+	width: 80%;
+	height: 125px;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(205,35,35,0.8);
+}
+
+button 
+{
+    cursor: pointer;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 0px;
+}
+
+/* ---Animation of Tabs-------- */
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
 
 /* ---------------- Introduction ---------------- */
 
