@@ -4,6 +4,8 @@
 			</div> -->
 		<div class='container'>
 			
+			<!-- Side Bar Section -->
+			
 			<div orientation='left' class='side-selects'>
 				<ul class='professional_Links'>
 					<li id="instagramIcon"> <a href='#' arial-label='Instagram'></a><i class="fab fa-instagram"></i></li>
@@ -15,7 +17,7 @@
 			
 			<!-- Introduction Section -->
 			
-			<section>
+			<section id='introductionSection'>
 				<div class="col-sm-8 landing-text column y-center">
 					<h1 class="landing__header">Sean Thompson</h1> 
 					<h2 class="landing__sub-header">Aspiring Creative</h2> 
@@ -28,7 +30,7 @@
 			
 			<!-- Quote Section -->
 			
-			<section>
+			<section id='quoteSection'>
 				<div class='quote'>
 					<h1 class='section-header self-Quote' id="smaller-section">
 						Everyone starts from 
@@ -85,104 +87,107 @@
 						Experience & Growth 
 					</h1>
 				</div>
-				<div class="tab col-sm-3">
-				<ul role="tablist" aria-label="Experience tabs" class="experienceTabs">
-					<li>
-						<a data-toggle="tab" href="#experience1"  class="experienceButton" onclick="viewExperience(event,'experience1')">
-							<span>Mailchimp</span>
-						</a>
-					</li>
-					<li>
-						<a data-toggle="tab" href="#experience2"  class="experienceButton" onclick="viewExperience(event,'experience2')">
-							<span>OneConnxt LLC.</span>
-						</a>
-					</li>
-					<li>
-						<a data-toggle="tab" href="#experience3"  class="experienceButton" onclick="viewExperience(event,'experience3')">
-							<span>GA Film Academy</span>
-						</a>
-					</li>
-					<li>
-						<a data-toggle="tab" href="#experience4"  class="experienceButton" onclick="viewExperience(event,'experience4')">
-							<span>PA Academy</span>
-						</a>
-					</li>
-					<li>
-						<a data-toggle="tab" href="#experience5"  class="experienceButton" onclick="viewExperience(event,'experience5')">
-							<span>TBD</span>
-						</a>
-					</li>
-					<span class="experienceHighlight"></span>
-					</ul>
-				</div>
-				<div class='col-sm-9'>
-   					<div id="experience1" class="tab-content active" style="display: block;">
-						<div class="animated animatedFadeInUp fadeInUp">
-							<img class='companyLogo' src='/images/MailchimpLogo.jpg' />
-							<div class='experienceTitle'>
-								<h3>Technical Content Producer</h3>
-								<h4>August 2019 - December 2019</h4>
-								<h4>Internship</h4>
-							</div>
-							<div class='experienceNotes'>
-								<p>Assisted in every portion of the video production process including pre-production, scripting, shooting, post-production, and publishing.</p>
-								<p>Captured and edited high-quality screen captures into instructional videos in Screenflow 8/9 for the Mailchimp knowledge base which, on average, is used by roughly 1.3 million users per month.</p>
-								<p>Utilized my computer science background to assist with the creation of videos with more technically advanced topics dealing with Mailchimp's API.
+				<div id='experienceMenu'>
+					<div class="tab col-sm-3">
+						<ul role="tablist" aria-label="Experience tabs" class="experienceTabs">
+							<li>
+								<a data-toggle="tab" href="#experience1"  class="experienceButton" onclick="viewExperience(event,'experience1')">
+									<span>Mailchimp</span>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#experience2"  class="experienceButton" onclick="viewExperience(event,'experience2')">
+									<span>OneConnxt LLC.</span>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#experience3"  class="experienceButton" onclick="viewExperience(event,'experience3')">
+									<span>GA Film Academy</span>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#experience4"  class="experienceButton" onclick="viewExperience(event,'experience4')">
+									<span>PA Academy</span>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#experience5"  class="experienceButton" onclick="viewExperience(event,'experience5')">
+									<span>TBD</span>
+								</a>
+							</li>
+							<span class="experienceHighlight"></span>
+						</ul>
+					</div>
+					<div class='col-sm-9'>
+   						<div id="experience1" class="tab-content active" style="display: block;">
+							<div class="animated animatedFadeInUp fadeInUp">
+								<img class='companyLogo' src='/images/MailchimpLogo.jpg' />
+								<div class='experienceTitle'>
+									<h3>Technical Content Producer</h3>
+									<h4>August 2019 - December 2019</h4>
+									<h4>Internship</h4>
+								</div>
+								<div class='experienceNotes'>
+									<p>Assisted in every portion of the video production process including pre-production, scripting, shooting, post-production, and publishing.</p>
+									<p>Captured and edited high-quality screen captures into instructional videos in Screenflow 8/9 for the Mailchimp knowledge base which, on average, is used by roughly 1.3 million users per month.</p>
+									<p>Utilized my computer science background to assist with the creation of videos with more technically advanced topics dealing with Mailchimp's API.
 </p>
+								</div>
+							</div>
+    					</div>
+    					<div id="experience2" class="tab-content" style="display: none;">
+							<div class="animated animatedFadeInUp fadeInUp">
+								<img class='companyLogo' src='/images/oneconnxt-logo-large.jpg' />
+								<div class='experienceTitle'>
+									<h3>Broadcast Technician</h3>
+									<h4>November 2017 - March 2019</h4>
+									<h4>Part-time Employment</h4>
+								</div>
+								<div class='experienceNotes'>
+									<p>Set up and optimized equipment to maintain signal strength, clarity, and reliability during broadcasts via Linux systems to remotely connect to encoders, decoders, receivers, and feeders.</p>
+									<p>Effectively communicate between multiple parties to confirm connectivity and functionality of broadcast and to keep informed on any issues.</p>
+									<p>Troubleshoot broadcast connection issues and packet loss between on-site and distribution services for optimal playback for client's audiences.
+</p>
+								</div>
+							</div>
+    					</div>
+						<div id="experience3" class="tab-content" style="display: none;">
+							<div class="animated animatedFadeInUp fadeInUp">
+							<img class='companyLogo' src='/images/GaFilmAcademy.png' />
+								<div class='experienceTitle'>
+									<h3>Student / Member</h3>
+									<h4>January 2017 - Present</h4>
+									<h4>Education & Training</h4>
+								</div>
+								<div class='experienceNotes'>
+									<p>Participate and learn in professonally crafted training courses on specialized crafts within the growing Film Industry.</p>
+									<p>Focused on courses to improve on Cinematography and Video Editing; I.E Post Production AVID Editing</p>
+								</div>
 							</div>
 						</div>
-    				</div>
-    				<div id="experience2" class="tab-content" style="display: none;">
-						<div class="animated animatedFadeInUp fadeInUp">
-							<img class='companyLogo' src='/images/oneconnxt-logo-large.jpg' />
-							<div class='experienceTitle'>
-								<h3>Broadcast Technician</h3>
-								<h4>November 2017 - March 2019</h4>
-								<h4>Part-time Employment</h4>
-							</div>
-							<div class='experienceNotes'>
-								<p>Set up and optimized equipment to maintain signal strength, clarity, and reliability during broadcasts via Linux systems to remotely connect to encoders, decoders, receivers, and feeders.</p>
-								<p>Effectively communicate between multiple parties to confirm connectivity and functionality of broadcast and to keep informed on any issues.</p>
-								<p>Troubleshoot broadcast connection issues and packet loss between on-site and distribution services for optimal playback for client's audiences.
-</p>
+						<div id="experience4" class="tab-content" style="display: none;">
+							<div class="animated animatedFadeInUp fadeInUp">
+								<div class='experienceTitle'>
+									<h3>PA Academy</h3>
+								</div>
+								<div class='experienceNotes'>
+									<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>	
+								</div>
 							</div>
 						</div>
-    				</div>
-    				<div id="experience3" class="tab-content" style="display: none;">
-						<div class="animated animatedFadeInUp fadeInUp">
-      					<img class='companyLogo' src='/images/GaFilmAcademy.png' />
-							<div class='experienceTitle'>
-								<h3>Student / Member</h3>
-								<h4>January 2017 - Present</h4>
-								<h4>Education & Training</h4>
+						<div id="experience5" class="tab-content" style="display: none;">
+							<div class="animated animatedFadeInUp fadeInUp">
+								<div class='experienceTitle'>
+									<h3>TBD</h3>	
+								</div>
+								<div class='experienceNotes'>
+									<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								</div>
 							</div>
-							<div class='experienceNotes'>
-								<p>Participate and learn in professonally crafted training courses on specialized crafts within the growing Film Industry.</p>
-								<p>Focused on courses to improve on Cinematography and Video Editing; I.E Post Production AVID Editing</p>
-							</div>
-    					</div>
-					</div>
-    				<div id="experience4" class="tab-content" style="display: none;">
-						<div class="animated animatedFadeInUp fadeInUp">
-							<div class='experienceTitle'>
-								<h3>PA Academy</h3>
-							</div>
-      						<div class='experienceNotes'>
-								<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>	
-							</div>
-    					</div>
-					</div>
-					<div id="experience5" class="tab-content" style="display: none;">
-						<div class="animated animatedFadeInUp fadeInUp">
-							<div class='experienceTitle'>
-								<h3>TBD</h3>	
-							</div>
-      						<div class='experienceNotes'>
-								<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-							</div>
-    					</div>
-					</div>
+						</div>
 				</div>
+				</div>
+
 			</section>
 		</div>
 <% include ./partials/footer.ejs %>

@@ -50,7 +50,6 @@ header nav
  width: 100%;
  height: 70px;
  background: rgba(0,0,0,0.6);
- padding: 0 100px;
  box-sizing: border-box;
 }
 
@@ -221,7 +220,8 @@ a
 section
 {
 	width: 100%;
-	height: 650px;
+	height: 100%;
+	padding: 150px 100px 100px;
 }
 
 .section-header
@@ -234,6 +234,160 @@ section
 {
 	margin-top: 5px;
 	color: #e6e6e6;
+}
+
+
+/* ---------------- Introduction ---------------- */
+
+#introductionSection
+{
+	overflow: auto;
+}
+
+.landing-text
+{
+	color: #ffffff;
+}
+
+.landing__header 
+{
+    font-weight: 800;
+    font-size: 5em;
+    margin-bottom: 10px;
+	letter-spacing: 2px;
+	bottom: -60px;
+	text-shadow: none;
+}
+
+.landing__header, .landing__sub-header
+{
+	font-family: 'Roboto', sans-serif;
+    position: relative;
+	letter-spacing: 5px;
+}
+
+.landing__sub-header
+{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 4px;
+	top: -10px;
+	font-size: 4.5em;
+	font-weight: 100;
+}
+
+.landing__header:after, .landing__sub-header:after 
+{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 6px;
+    background: #444;
+	width: 100%;
+}
+
+.landing__header:after
+{
+    bottom: -15px;
+}
+
+.landing-featured
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	padding-bottom: 40px;
+	color: #FF0000;
+}
+
+.roles
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+	color: #e6e6e6;
+}
+
+.y-center 
+{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+	align-items: center;
+}
+
+.column 
+{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+  	flex-direction: column;
+}
+
+.type
+{
+	font-size: 25px;
+}
+
+
+/* --------------------- Quote Section ----------------------- */
+
+.quote
+{
+	display: inline-block;
+	margin: 5px;
+}
+
+#quoteSection
+{
+	height: 900px;
+}
+
+#smaller-section
+{
+	margin-top: 55px;
+	margin-bottom: 40px;
+	font-size: 7vw;
+    line-height: 9vw;
+	letter-spacing: 2.5px;
+}
+
+#zero
+{
+	font-weight: lighter;
+	font-size: 26vw;
+    line-height: 23vw;
+	position: relative;
+	margin-left: -25px;
+}
+
+/* ---------------------- About Section ------------------------ */
+
+#about-section
+{
+	padding-left: 25px;
+}
+
+#about-section:before 
+{
+    content: ">";
+    position: absolute;
+    bottom: 42px;
+    left: 0px;
+    height: 4px;
+    width: 0%;
+	color: #FF0000;
+    background: #ffffff;
+}
+
+#about-section:after 
+{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 215px;
+    height: 4px;
+    width: 48%;
+    background: #FF0000;
 }
 
 .infotext
@@ -289,62 +443,9 @@ section
 	color: #FF0000;
 }
 
-
-/* --------------------- Quote Section ----------------------- */
-
-.quote
+.row
 {
-	display: inline-block;
-	margin: 5px;
-	height: 600px;
-}
-
-#smaller-section
-{
-	margin-top: 55px;
-	margin-bottom: 40px;
-	padding-left: 30px;
-	font-size: 7vw;
-    line-height: 9vw;
-	letter-spacing: 2.5px;
-}
-
-#zero
-{
-	font-weight: lighter;
-	font-size: 26vw;
-    line-height: 23vw;
-	position: relative;
-}
-
-/* ---------------------- About Section ------------------------ */
-
-#about-section
-{
-	padding-left: 25px;
-}
-
-#about-section:before 
-{
-    content: ">";
-    position: absolute;
-    bottom: 42px;
-    left: 0px;
-    height: 4px;
-    width: 0%;
-	color: #FF0000;
-    background: #ffffff;
-}
-
-#about-section:after 
-{
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    left: 215px;
-    height: 4px;
-    width: 48%;
-    background: #FF0000;
+	margin-left: 0px;
 }
 
 /* ------------------ Where I've Worked Section -------------------- */
@@ -499,7 +600,6 @@ button
 }
 
 /* ---Animation of Tabs-------- */
-/* Animation */
 
 @keyframes fadeInUp {
     from {
@@ -540,98 +640,6 @@ button
     -webkit-animation-name: fadeInUp;
 }
 
-
-/* ---------------- Introduction ---------------- */
-
-.landing-text
-{
-	text-align: left;
-	color: #ffffff;
-	padding-top: 100px;
-	float: left;
-}
-
-.landing__header 
-{
-    font-weight: 800;
-    font-size: 6em;
-    margin-bottom: 10px;
-	letter-spacing: 2px;
-	bottom: -60px;
-	text-shadow: none;
-}
-
-.landing__header, .landing__sub-header
-{
-	font-family: 'Roboto', sans-serif;
-    position: relative;
-	font-size: 5em;
-	letter-spacing: 5px;
-}
-
-.landing__sub-header
-{
-	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: 4px;
-	top: -10px;
-	font-weight: 100;
-}
-
-.landing__header:after, .landing__sub-header:after 
-{
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    height: 6px;
-    background: #444;
-	width: 85%;
-}
-
-.landing__header:after
-{
-    bottom: -15px;
-}
-
-.landing-featured
-{
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	padding-bottom: 40px;
-	padding-left: 15px;
-	color: #FF0000;
-}
-
-.roles
-{
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-	color: #e6e6e6;
-}
-
-.y-center 
-{
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-	align-items: center;
-}
-
-.column 
-{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-  	flex-direction: column;
-}
-
-.type
-{
-	font-size: 25px;
-}
-
-
 /* ----------------------------  Responsive CSS -----------------------------*/
 #menuToggle
 {
@@ -646,6 +654,8 @@ button
 
 @media (max-width: 991px)
 {
+	
+	/* ----------- Header / Navbar Responsiveness ---------- */
 	header
 	{
 		padding: 0 20px;
@@ -663,6 +673,8 @@ button
 		top: 50px;
 		Left: -100%;
 		transition: 0.5s;
+		text-align: center;
+		justify-content: center;
 	}
 	
 	header nav.active
@@ -691,4 +703,42 @@ button
 	{
 		width: 100%;
 	}	
+	
+	section
+	{
+		width: 100%;
+		height: 100%;
+		padding: 100px 50px 50px;
+		flex-direction: column;
+	}
+	
+	/* ----------------- Intro Section Responsive ------------- */
+
+	/* ----------------- About Section Responsive ------------- */
+
+	.infotext 
+	{
+		padding-left: 25px;
+	}
+	
+	/*------------------ Quote Section Responsive -------------*/
+	#quoteSection
+	{
+		height: 100%;
+	}
 }
+
+@media (max-width: 767px)
+{
+	#quoteSection
+	{
+		height: calc(100vh - 50px);
+	}
+	
+	.technologyGrid
+	{
+		padding-left: 25px;
+		margin-top: 0px;
+	}
+}
+		
