@@ -386,7 +386,7 @@ section
     bottom: 20px;
     left: 215px;
     height: 4px;
-    width: 48%;
+    width: 85%;
     background: #FF0000;
 }
 
@@ -450,12 +450,17 @@ section
 
 /* ------------------ Where I've Worked Section -------------------- */
 
-#experience-section
+#experienceSection
+{
+	height: 850px;
+}
+
+#experienceHeader
 {
 	padding-left: 25px;
 }
 
-#experience-section:before 
+#experienceHeader:before 
 {
     content: ">";
     position: absolute;
@@ -467,15 +472,25 @@ section
     background: #ffffff;
 }
 
-#experience-section:after 
+#experienceHeader:after 
 {
     content: "";
     position: absolute;
     bottom: 20px;
     left: 410px;
     height: 4px;
-    width: 31%;
+    width: 66%;
     background: #FF0000;
+}
+
+#experienceMenu
+{
+	height: 850px;
+}
+
+#experienceDetails
+{
+	max-width: 750px;
 }
 
 .experienceTabs
@@ -730,6 +745,11 @@ button
 
 @media (max-width: 767px)
 {
+	body
+	{
+		position: absolute;
+	}
+	
 	#quoteSection
 	{
 		height: calc(100vh - 50px);
