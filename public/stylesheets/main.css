@@ -384,7 +384,7 @@ section
     content: "";
     position: absolute;
     bottom: 20px;
-    left: 215px;
+    margin-left: 5px;
     height: 4px;
     width: 85%;
     background: #FF0000;
@@ -477,7 +477,7 @@ section
     content: "";
     position: absolute;
     bottom: 20px;
-    left: 410px;
+    margin-left: 5px;
     height: 4px;
     width: 66%;
     background: #FF0000;
@@ -540,11 +540,6 @@ section
 {
 	color: #FF0000;
 	background-color: #e6e6e6;
-}
-
-.tab
-{
-	float:left;	
 }
 
 .tab-content 
@@ -654,6 +649,13 @@ button
     -webkit-animation-name: fadeInUp;
 }
 
+/*-------- Bottom Selects -----*/
+.bottom-selects
+{
+	display: none;
+}
+
+
 /* ----------------------------  Responsive CSS -----------------------------*/
 #menuToggle
 {
@@ -743,10 +745,52 @@ button
 }
 
 @media (max-width: 767px)
-{
-	body
+{	
+	
+	
+	/* Intro Section ----------------- */
+	#introductionSection
 	{
-		position: absolute;
+		overflow: unset;
+		display: inline-table;
+	}
+	
+	/* Sidebar Sections--------------- */
+	.professional_Links
+	{
+		display: flex;
+    	flex-direction: row;
+    	-webkit-box-align: center;
+    	align-items: center;
+    	padding: 0px;
+    	margin: 0px;
+    	list-style: none;
+	}
+	
+	.professional_Links li
+	{
+		padding-left: 25px;
+	}
+	
+	.bottom-selects
+	{
+		display: block;
+   		width: max-content;
+    	position: absolute;
+    	margin: 0 auto;
+    	z-index: 10;
+    	color: #444;
+    	font-size: 25px;
+    	left: 55%;
+	}
+	
+	.side-selects
+	{
+		display: none;
+	}
+	.side-selects:after
+	{
+		display: none;
 	}
 	
 	/* Quote Section ----------------- */
@@ -757,19 +801,40 @@ button
 	}
 	
 	/* About Me --------------------- */
+	.infotext
+	{
+		width: 200%;
+	}
 	
 	.technologyGrid
 	{
 		padding-left: 25px;
 		margin-top: 0px;
+		width: 200%;
 	}
 	
 	/* Experience ------------------- */
+	#experienceHeader
+	{
+		width: max-content;
+	}
+	
+	#experienceHeader:after 
+	{
+		width: 35%
+	}
+	
+	#experienceMenu
+	{
+		width: 230%;
+	}
 	
 	.experienceTabs
 	{
 		display: inline-flex;
-		margin-left: 35px;
+		overflow-x: scroll;
+		width: 100%;
+		
 	}
 	.experienceTabs li
 	{
