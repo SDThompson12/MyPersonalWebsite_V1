@@ -8,9 +8,11 @@ app.use(express.static(__dirname + "/public"));
 
 //Requiring Routes
 var mainHomePageRoute = require('./routes/mainPage.js');
+var filmPortfolioRoute = require('./routes/filmProductionPortfolio.js');
 
 //Imports Routes
 app.use("/", mainHomePageRoute);
+app.use("/film_production", filmPortfolioRoute)
 
 app.listen(3152, function()
 {
