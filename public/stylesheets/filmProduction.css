@@ -292,6 +292,30 @@ button
     -o-transition: opacity .5s ease-out;
 }
 
+ul.directionFeatures li
+{
+    list-style: none;
+}
+
+ul.filmDirectionTabs li
+{
+	list-style: none;
+	display: inline;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding-left: 30px;
+}
+
+ul.filmDirectionTabs li.active span
+{
+	color: #FF0000;
+}
+
+a.filmDirectionButton span
+{
+	color: #FFFFFF;
+}
+
 /* ------- Feature Images ---------- */
 #antigoneFeature
 {

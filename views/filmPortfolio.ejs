@@ -82,20 +82,54 @@
    						<div id="filmWork1" class="tab-content active" style="display: block;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
-									<a href="#" class="feature">
-										<img class="featurePhoto" id="urbanrecipeFeature" src="/images/UrbanRecipeFeature.png">
-									</a>
-									<a href='#' class='feature'>
-										<img class='featurePhoto' id='antigoneFeature' src='/images/AntigoneFeature.png' />
-									</a>
-									<a href='#' class='feature'>
-										<img class='featurePhoto' id='buildabooFeature' src='/images/Build-A-BooFeature.png' />
-									</a>
-									<!-- 
-										<a href='#' class='feature'>
-											<img class='featurePhoto' id='filmdirectionFeature' src='/images/FilmDirectionOthersFeature.png' />
-										</a>
-									-->
+									
+									<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
+									<ul class="directionFeatures feature-tab-content active" id="filmDirectionList1" style="display: block;" >
+										<li>
+											<a href="#" class="feature" onclick="viewFilmFeature">
+												<img class="featurePhoto" id="urbanrecipeFeature" src="/images/UrbanRecipeFeature.png">
+											</a>
+										</li>
+										<li>
+											<a href='#' class='feature' onclick="viewFilmFeature">
+												<img class='featurePhoto' id='antigoneFeature' src='/images/AntigoneFeature.png' />
+											</a>
+										</li>
+										<li>
+											<a href='#' class='feature' onclick="viewFilmFeature">
+												<img class='featurePhoto' id='buildabooFeature' src='/images/Build-A-BooFeature.png' />
+											</a>
+										</li>			
+									</ul>
+										
+									<!-- ------------- The Features List that is Shown: Tab 2 -------- -->
+									<ul class="directionFeatures feature-tab-content" id="filmDirectionList2" style="display: none;" >
+										<li>
+											<a href='#' class='feature'>
+												<img class='featurePhoto' id='filmdirectionFeature' src='/images/FilmDirectionOthersFeature.png' />
+											</a>
+										</li>
+									</ul>	
+									
+									<!-- ---------- The Number Tablist to Change the Features Shown -------- -->
+										<ul role="tablist" aria-label="FilmDirection tabs" class="filmDirectionTabs">
+											<li class='directionNum active'>
+												<a data-toggle="tab" href="#filmDirectionList1"  class="filmDirectionButton" onclick="viewFilmDirectionList(event,'filmDirectionList1')">
+													<span>1</span>
+												</a>
+											</li>
+											<li class='directionNum'>
+												<a data-toggle="tab" href="#filmDirectionList2"  class="filmDirectionButton" onclick="viewFilmDirectionList(event,'filmDirectionList2')">
+													<span>2</span>
+												</a>
+											</li>
+											<li class='directionNum'>
+												<a data-toggle="tab" href="#filmDirectionList3"  class="filmDirectionButton" onclick="viewFilmDirectionList(event,'filmDirectionList3')">
+													<span>3</span>
+												</a>
+											</li>
+										</ul>
+									
 								</div>
 							</div>
     					</div>
@@ -178,6 +212,36 @@
 			});
 	</script>
 	
+	<script>
+	function viewFilmDirectionList(event, filmDirectionNum) 
+		{
+  		// Declare all variables
+  			var i, tabcontent, filmDirectionButton;
+		
+  		// Get all elements with class="feature-tab-content" and hide them
+  			tabcontent = document.getElementsByClassName("feature-tab-content");
+  				for (i = 0; i < tabcontent.length; i++) 
+				{
+    				tabcontent[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							tabcontent[i].style.display = 'block';
+						}
+  				}
+
+ 		// Get all elements with class="filmWorkButton" and remove the class "active"
+  			filmDirectionButton = document.getElementsByClassName("filmDirectionButton");
+  				for (i = 0; i < filmDirectionButton.length; i++) 
+				{
+    				filmDirectionButton[i].className = filmDirectionButton[i].className.replace(" active", "");
+  				}
+
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  			document.getElementById(filmDirectionNum).style.display = "block";
+ 				event.currentTarget.className += " active";
+		} 
+	</script>
+		
 	<script>
 	function viewFilmWork(event, filmWorkNum) 
 		{
