@@ -261,6 +261,80 @@ button
     border-radius: 0px;
 }
 
+/* ---------------------------- Feature Section ---------------- */
+#filmWorkTitle
+{
+	font-family: 'Roboto Mono', sans-serif;
+    color: #FFFFFF;
+	font-weight: 100;
+    font-size: 3em;
+    text-align: end;
+    padding-right: 30px;
+    text-decoration: underline;
+	text-underline-position: under;
+}
+
+.featurePhoto
+{
+	width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border: 5px solid black;
+	margin-bottom: 20px;
+}
+
+.featurePhoto:hover
+{
+	opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+/* ------- Feature Images ---------- */
+#antigoneFeature
+{
+	object-position: 20% -30px;
+}
+#buildabooFeature
+{
+	object-position: 20% -28px;
+}
+#piedmontFeature
+{
+	object-position: 20% -30px;
+}
+#eliteFeature
+{
+	object-position: 20% -28px;
+}
+#pottedplanterFeature
+{
+	object-position: 20% -90px;
+}
+#livingroomFeature
+{
+	object-position: 20% -97px;
+}
+
+#cozumelFeature
+{
+	object-position: 20% -253px;
+}
+
+#urbanrecipeFeature
+{
+	object-position: 20% -32px;
+}
+
+#filmdirectionFeature
+{
+	object-position: 20% -43px;
+}
+
+/* ---------------------------- Animations -------------------------- */
+
 /* ---Animation of Tabs-------- */
 
 @keyframes fadeInUp {
