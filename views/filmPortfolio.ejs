@@ -84,7 +84,7 @@
 								<div class='filmWorkFeatures'>
 									
 									<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
-									<ul class="directionFeatures feature-tab-content active" id="filmDirectionList1" style="display: block;" >
+									<ul class="directionFeatures feature-tab-content active animated animatedFadeInUp fadeInUp" id="filmDirectionList1" style="display: block;" >
 										<li>
 											<a href="#" class="feature" onclick="viewFilmFeature">
 												<img class="featurePhoto" id="urbanrecipeFeature" src="/images/UrbanRecipeFeature.png">
@@ -103,10 +103,20 @@
 									</ul>
 										
 									<!-- ------------- The Features List that is Shown: Tab 2 -------- -->
-									<ul class="directionFeatures feature-tab-content" id="filmDirectionList2" style="display: none;" >
+									<ul class="directionFeatures feature-tab-content animated animatedFadeInUp fadeInUp" id="filmDirectionList2" style="display: none;" >
 										<li>
 											<a href='#' class='feature'>
-												<img class='featurePhoto' id='filmdirectionFeature' src='/images/FilmDirectionOthersFeature.png' />
+												<img class='featurePhoto' id='plushieFeature' src='/images/ThePlushieFeature.png' />
+											</a>
+										</li>
+										<li>
+											<a href='#' class='feature'>
+												<img class='featurePhoto' id='catfishFeature' src='/images/CatfishFeature.png' />
+											</a>
+										</li>
+										<li>
+											<a href='#' class='feature'>
+												<img class='featurePhoto' id='lifestyleFeature' src='/images/LifestyleVideoFeature.png' />
 											</a>
 										</li>
 									</ul>	
@@ -123,11 +133,13 @@
 													<span>2</span>
 												</a>
 											</li>
+										<!-- 
 											<li class='directionNum'>
 												<a data-toggle="tab" href="#filmDirectionList3"  class="filmDirectionButton" onclick="viewFilmDirectionList(event,'filmDirectionList3')">
 													<span>3</span>
 												</a>
 											</li>
+										-->
 										</ul>
 									
 								</div>
@@ -136,26 +148,70 @@
    						<div id="filmWork2" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
-									<a href='#' class='feature'>
-										<img class='featurePhoto' id='piedmontFeature' src='/images/PiedmontParkFeature.png' />
-									</a>
-									<a href='#' class='feature'>
-										<img class='featurePhoto' id='eliteFeature' src='/images/EliteScholarsFeature.png' />
-									</a>
-									<p>Other Works: Photography </p>
+										<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
+									<ul class="aerialFeatures aerialfeature-tab-content active animated animatedFadeInUp fadeInUp" id="aerialList1" style="display: block;" >
+										<li>
+											<a href='#' class='feature' onclick="viewAerialFeature">
+												<img class='featurePhoto' id='piedmontFeature' src='/images/PiedmontParkFeature.png' />
+											</a>
+										</li>
+										<li>
+											<a href='#' class='feature' onclick="viewAerialFeature">
+												<img class='featurePhoto' id='eliteFeature' src='/images/EliteScholarsFeature.png' />
+											</a>
+										</li>			
+									</ul>
+									
+											<!-- ---------- The Number Tablist to Change the Features Shown: Aerial Videography -------- -->
+										<ul role="tablist" aria-label="Aerial tabs" class="aerialTabs">
+											<li class='aerialNum active'>
+												<a data-toggle="tab" href="#aerialList1"  class="aerialButton" onclick="viewAerialList(event,'aerialList1')">
+													<span> </span>
+												</a>
+											</li>
+									<!--
+											<li class='aerialNum'>
+												<a data-toggle="tab" href="#aerialList1"  class="aerialButton" onclick="viewAerialList(event,'aerialList2')">
+													<span>2</span>
+												</a>
+											</li>
+									-->
+									</ul>	
 								</div>
 							</div>
     					</div>
 						<div id="filmWork3" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
-									<a href='#' class='feature'>
-										<img class='featurePhoto' id='pottedplanterFeature' src='/images/ThePottedPlanterFeature.png' />
-									</a>
-									<a href='#' class='feature'>
-										<img class='featurePhoto' id='livingroomFeature' src='/images/LivingRoomFireplaceFeature.png' />
-									</a>
-									<p>Other Works: 3D Modeling </p>
+											<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
+									<ul class="modelingFeatures modelingfeature-tab-content active animated animatedFadeInUp fadeInUp" id="modelingList1" style="display: block;" >
+										<li>
+											<a href='#' class='feature' onclick="viewModelingFeature">
+												<img class='featurePhoto' id='pottedplanterFeature' src='/images/ThePottedPlanterFeature.png' />
+											</a>
+										</li>
+										<li>
+											<a href='#' class='feature' onclick="viewModelingFeature">
+												<img class='featurePhoto' id='livingroomFeature' src='/images/LivingRoomFireplaceFeature.png' />
+											</a>
+										</li>			
+									</ul>
+									
+											<!-- ---------- The Number Tablist to Change the Features Shown: 3D Modeling -------- -->
+										<ul role="tablist" aria-label="Modeling tabs" class="modelingTabs">
+											<li class='modelingNum active'>
+												<a data-toggle="tab" href="#modelingList1"  class="modelingButton" onclick="viewModelingList(event,'modelingList1')">
+													<span> </span>
+												</a>
+											</li>
+									<!--
+											<li class='modelingNum'>
+												<a data-toggle="tab" href="#modelingList2"  class="modelingButton" onclick="viewModelingList(event,'modelingList2')">
+													<span>2</span>
+												</a>
+											</li>
+									-->
+										</ul>
 								</div>
 							</div>
     					</div>
@@ -212,6 +268,9 @@
 			});
 	</script>
 	
+	<!-- -------------------  JS for Other Tabs for Features ---------------------------- -->	
+	
+	<!-- Film Direction -->	
 	<script>
 	function viewFilmDirectionList(event, filmDirectionNum) 
 		{
@@ -242,6 +301,69 @@
 		} 
 	</script>
 		
+	<!-- Aerial Videography -->		
+	<script>
+	function viewAerialList(event, aerialNum) 
+		{
+  		// Declare all variables
+  			var i, tabcontent, aerialButton;
+		
+  		// Get all elements with class="aerialfeature-tab-content" and hide them
+  			tabcontent = document.getElementsByClassName("aerialfeature-tab-content");
+  				for (i = 0; i < tabcontent.length; i++) 
+				{
+    				tabcontent[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							tabcontent[i].style.display = 'block';
+						}
+  				}
+
+ 		// Get all elements with class="aerialButton" and remove the class "active"
+  			aerialButton = document.getElementsByClassName("aerialButton");
+  				for (i = 0; i < aerialButton.length; i++) 
+				{
+    				aerialButton[i].className = aerialButton[i].className.replace(" active", "");
+  				}
+
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  			document.getElementById(aerialNum).style.display = "block";
+ 				event.currentTarget.className += " active";
+		} 
+	</script>	
+		
+	<!-- 3D Modeling -->		
+	<script>
+	function viewModelingList(event, modelingNum) 
+		{
+  		// Declare all variables
+  			var i, tabcontent, modelingButton;
+		
+  		// Get all elements with class="modelingfeature-tab-content" and hide them
+  			tabcontent = document.getElementsByClassName("modelingfeature-tab-content");
+  				for (i = 0; i < tabcontent.length; i++) 
+				{
+    				tabcontent[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							tabcontent[i].style.display = 'block';
+						}
+  				}
+
+ 		// Get all elements with class="modelingButton" and remove the class "active"
+  			modelingButton = document.getElementsByClassName("modelingButton");
+  				for (i = 0; i < modelingButton.length; i++) 
+				{
+    				modelingButton[i].className = modelingButton[i].className.replace(" active", "");
+  				}
+
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  			document.getElementById(modelingNum).style.display = "block";
+ 				event.currentTarget.className += " active";
+		} 
+	</script>		
+		
+		<!-- -------------------  JS for Film Work Catagories ---------------------------- -->
 	<script>
 	function viewFilmWork(event, filmWorkNum) 
 		{

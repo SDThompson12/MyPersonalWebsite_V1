@@ -163,7 +163,7 @@ section
 {
 	width: 100%;
 	height: 100%;
-	padding: 150px 100px 100px;
+	padding: 40px 100px 100px;
 }
 
 /* ---------------------- Film Work Section ------------------- */
@@ -292,6 +292,8 @@ button
     -o-transition: opacity .5s ease-out;
 }
 
+/* ------Film Direction Features------ */
+
 ul.directionFeatures li
 {
     list-style: none;
@@ -315,6 +317,57 @@ a.filmDirectionButton span
 {
 	color: #FFFFFF;
 }
+
+/* ------Aerial Features------ */
+ul.aerialFeatures li
+{
+    list-style: none;
+}
+
+ul.aerialTabs li
+{
+	list-style: none;
+	display: inline;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding-left: 30px;
+}
+
+ul.aerialTabs li.active span
+{
+	color: #FF0000;
+}
+
+a.aerialButton span
+{
+	color: #FFFFFF;
+}
+
+/* ------3D Modeling Features------ */
+ul.modelingFeatures li
+{
+    list-style: none;
+}
+
+ul.modelingTabs li
+{
+	list-style: none;
+	display: inline;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding-left: 30px;
+}
+
+ul.modelingTabs li.active span
+{
+	color: #FF0000;
+}
+
+a.modelingButton span
+{
+	color: #FFFFFF;
+}
+
 
 /* ------- Feature Images ---------- */
 #antigoneFeature
@@ -357,49 +410,74 @@ a.filmDirectionButton span
 	object-position: 20% -43px;
 }
 
+#plushieFeature
+{
+	object-position: 20% -25px;
+}
+
+#catfishFeature
+{
+	object-position: 20% -20px;
+}
+
+#lifestyleFeature
+{
+	object-position: 20% -6px;
+}
+
+
+
 /* ---------------------------- Animations -------------------------- */
 
 /* ---Animation of Tabs-------- */
 
-@keyframes fadeInUp {
-    from {
+@keyframes fadeInUp 
+{
+    from 
+	{
         transform: translate3d(0,40px,0)
     }
 
-    to {
+    to 
+	{
         transform: translate3d(0,0,0);
         opacity: 1
     }
 }
 
-@-webkit-keyframes fadeInUp {
-    from {
+@-webkit-keyframes fadeInUp 
+{
+    from 
+	{
         transform: translate3d(0,40px,0)
     }
 
-    to {
+    to 
+	{
         transform: translate3d(0,0,0);
         opacity: 1
     }
 }
 
-.animated {
+.animated 
+{
     animation-duration: 1s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both
 }
 
-.animatedFadeInUp {
+.animatedFadeInUp 
+{
     opacity: 0
 }
 
-.fadeInUp {
+.fadeInUp 
+{
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
-
 
 /* ------------------------------- Side Column ---------------------------- */
 
