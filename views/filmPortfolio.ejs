@@ -96,12 +96,12 @@
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFilmFeature">
+											<a href='#' class='feature' onclick="viewFeatureVideo(event,'buildABooVideo','filmWork1')">
 												<img class='featurePhoto' id='buildabooFeature' src='/images/Build-A-BooFeature.png' />
 											</a>
 										</li>			
 									</ul>
-										
+									
 									<!-- ------------- The Features List that is Shown: Tab 2 -------- -->
 									<ul class="directionFeatures feature-tab-content animated animatedFadeInUp fadeInUp" id="filmDirectionList2" style="display: none;" >
 										<li>
@@ -140,11 +140,17 @@
 												</a>
 											</li>
 										-->
-										</ul>
-									
+										</ul>	
 								</div>
-							</div>
+							</div>		
     					</div>
+						
+						<!-- ----------- Film Work Videos ------------ -->
+						<div id='buildABooVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/nTeWlC2edzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						
+						
    						<div id="filmWork2" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
@@ -184,7 +190,7 @@
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
 											<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
-									<ul class="modelingFeatures modelingfeature-tab-content active animated animatedFadeInUp fadeInUp" id="modelingList1" style="display: block;" >
+									<ul class="modelingFeatures modelingfeature-tab-content active" id="modelingList1" style="display: block;" >
 										<li>
 											<a href='#' class='feature' onclick="viewModelingFeature">
 												<img class='featurePhoto' id='pottedplanterFeature' src='/images/ThePottedPlanterFeature.png' />
@@ -364,11 +370,13 @@
 	</script>		
 		
 		<!-- -------------------  JS for Film Work Catagories ---------------------------- -->
+	
+	<!-- Shows/Reshow Feature Photos and Hides/Clears all Videos from being active/visible -->
 	<script>
 	function viewFilmWork(event, filmWorkNum) 
 		{
   		// Declare all variables
-  			var i, tabcontent, filmWorkButton;
+  			var i, tabcontent, filmWorkButton, featurePhotos, featureVideos;
 		
   		// Get all elements with class="tab-content" and hide them
   			tabcontent = document.getElementsByClassName("tab-content");
@@ -387,13 +395,81 @@
 				{
     				filmWorkButton[i].className = filmWorkButton[i].className.replace(" active", "");
   				}
+			
+		// Get all elements with class="featurePhoto" and remove the class "active"
+  			featurePhotos = document.getElementsByClassName("featurePhoto");
+  				for (i = 0; i < featurePhotos.length; i++) 
+				{
+    				featurePhotos[i].className = featurePhotos[i].className.replace(" active", "");
+  				}
+			
+		// Get all elements with class="featuredVideo" and remove the class "active"
+  			featureVideos = document.getElementsByClassName("featuredVideo");
+  				for (i = 0; i < featureVideos.length; i++) 
+				{
+    				featureVideos[i].className = featureVideos[i].className.replace(" active", "");
+  				}
+		
+		// Get all elements with class="featuredVideo" and hide them
+  			tabcontent = document.getElementsByClassName("featuredVideo");
+  				for (i = 0; i < tabcontent.length; i++) 
+				{
+    				tabcontent[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							tabcontent[i].style.display = 'block';
+						}
+  				}
+
 
   		// Show the current tab, and add an "active" class to the button that opened the tab
   			document.getElementById(filmWorkNum).style.display = "block";
  				event.currentTarget.className += " active";
 		} 
 	</script>
+		
+	<!-- Show the Featured Video when a Feature Photo is pressed -->
+	<script>
+	function viewFeatureVideo(event, videoName, filmWorkSection) 
+		{
+  		// Declare all variables
+  			var i, featuredVideo, featureButton, featureATag;
+		
+  		// Get all elements with class="featuredVideo" and hide them
+  			featuredVideo = document.getElementsByClassName("featuredVideo");
+  				for (i = 0; i < featuredVideo.length; i++) 
+				{
+    				featuredVideo[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							featuredVideo[i].style.display = 'block';
+						}
+  				}
 
+ 		// Get all elements with class="featurePhoto" and remove the class "active"
+  			featureButton = document.getElementsByClassName("featurePhoto");
+  				for (i = 0; i < featureButton.length; i++) 
+				{
+    				featureButton[i].className = featureButton[i].className.replace(" active", "");
+  				}
+		
+		// Get all elements with class="feature" and remove the class "active"
+  			featureATag = document.getElementsByClassName("feature");
+  				for (i = 0; i < featureATag.length; i++) 
+				{
+    				featureATag[i].className = featureATag[i].className.replace(" active", "");
+  				}
+			
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  			document.getElementById(videoName).style.display = "block";
+ 				event.currentTarget.className += " active"; 
+		
+		// Show the current tab, and add an "active" class to the button that opened the tab
+  		document.getElementById(filmWorkSection).style.display = "none";
+ 				event.currentTarget.className += "";
+		}
+	</script>
+		
 	<script>		
 		var typed = new Typed(".type", 
 		{
