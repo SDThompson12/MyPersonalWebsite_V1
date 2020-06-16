@@ -292,6 +292,12 @@ button
     -o-transition: opacity .5s ease-out;
 }
 
+.featuredVideo
+{
+	margin-left: 75px;
+    padding: 25px 0px 25px 24px;
+}
+
 /* ------Film Direction Features------ */
 
 ul.directionFeatures li

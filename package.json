@@ -11,6 +11,8 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.17.1",
+    "three": "^0.117.1",
+    "three-orbitcontrols": "^2.110.3",
     "typed.js": "^2.0.10"
   }
 }

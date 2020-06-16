@@ -86,17 +86,17 @@
 									<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
 									<ul class="directionFeatures feature-tab-content active animated animatedFadeInUp fadeInUp" id="filmDirectionList1" style="display: block;" >
 										<li>
-											<a href="#" class="feature" onclick="viewFilmFeature">
+											<a href="#" class="feature" onclick="viewFeature(event,'urbanRecipeVideo','filmWork1')">
 												<img class="featurePhoto" id="urbanrecipeFeature" src="/images/UrbanRecipeFeature.png">
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFilmFeature">
+											<a href='#' class='feature' onclick="viewFeature(event,'antigoneVideo','filmWork1')">
 												<img class='featurePhoto' id='antigoneFeature' src='/images/AntigoneFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeatureVideo(event,'buildABooVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'buildABooVideo','filmWork1')">
 												<img class='featurePhoto' id='buildabooFeature' src='/images/Build-A-BooFeature.png' />
 											</a>
 										</li>			
@@ -105,17 +105,17 @@
 									<!-- ------------- The Features List that is Shown: Tab 2 -------- -->
 									<ul class="directionFeatures feature-tab-content animated animatedFadeInUp fadeInUp" id="filmDirectionList2" style="display: none;" >
 										<li>
-											<a href='#' class='feature'>
+											<a href='#' class='feature' onclick="viewFeature(event,'plushieVideo','filmWork1')">
 												<img class='featurePhoto' id='plushieFeature' src='/images/ThePlushieFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature'>
+											<a href='#' class='feature' onclick="viewFeature(event,'catfishParodyVideo','filmWork1')">
 												<img class='featurePhoto' id='catfishFeature' src='/images/CatfishFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature'>
+											<a href='#' class='feature' onclick="viewFeature(event,'lifestyleVideo','filmWork1')">
 												<img class='featurePhoto' id='lifestyleFeature' src='/images/LifestyleVideoFeature.png' />
 											</a>
 										</li>
@@ -146,10 +146,30 @@
     					</div>
 						
 						<!-- ----------- Film Work Videos ------------ -->
+						<!-- --Page 1-- -->
+						<div id='urbanRecipeVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe width="560" height="315" src="/videos/UrbanRecipe-FinalCut.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						
+						<div id='antigoneVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/_75wBMEU8nE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						
 						<div id='buildABooVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/nTeWlC2edzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						
+						<!-- --Page 2-- -->
+						<div id='plushieVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe src="https://player.vimeo.com/video/429341990" width="560" height="315" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+						</div>
+						
+						<div id='catfishParodyVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe src="https://player.vimeo.com/video/429343697" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+						</div>
+						<div id='lifestyleVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe src="https://player.vimeo.com/video/429363462" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+						</div>
 						
    						<div id="filmWork2" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
@@ -157,12 +177,12 @@
 										<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
 									<ul class="aerialFeatures aerialfeature-tab-content active animated animatedFadeInUp fadeInUp" id="aerialList1" style="display: block;" >
 										<li>
-											<a href='#' class='feature' onclick="viewAerialFeature">
+											<a href='#' class='feature' onclick="viewFeature(event,'piedmontParkVideo','filmWork2')">
 												<img class='featurePhoto' id='piedmontFeature' src='/images/PiedmontParkFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewAerialFeature">
+											<a href='#' class='feature' onclick="viewFeature(event,'eliteScholarsVideo','filmWork2')">
 												<img class='featurePhoto' id='eliteFeature' src='/images/EliteScholarsFeature.png' />
 											</a>
 										</li>			
@@ -186,18 +206,29 @@
 								</div>
 							</div>
     					</div>
+						
+						<!-- ----------- Aerial Videography Videos ------------ -->
+						<!-- --Page 1-- -->
+						<div id='piedmontParkVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe src="https://player.vimeo.com/video/429428724" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+						</div>
+						
+						<div id='eliteScholarsVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
+							<iframe src="https://player.vimeo.com/video/429428900" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+						</div>
+						
 						<div id="filmWork3" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
 											<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
 									<ul class="modelingFeatures modelingfeature-tab-content active" id="modelingList1" style="display: block;" >
 										<li>
-											<a href='#' class='feature' onclick="viewModelingFeature">
+											<a href='#' class='feature' onclick="viewFeature(event,'pottedPlanterModel','filmWork3')">
 												<img class='featurePhoto' id='pottedplanterFeature' src='/images/ThePottedPlanterFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewModelingFeature">
+											<a href='#' class='feature' onclick="viewFeature(event,'livingRoomModel','filmWork3')">
 												<img class='featurePhoto' id='livingroomFeature' src='/images/LivingRoomFireplaceFeature.png' />
 											</a>
 										</li>			
@@ -221,6 +252,26 @@
 								</div>
 							</div>
     					</div>
+						
+						<!-- ----------- 3D Model Viewing ------------ -->
+						
+						<div id='pottedPlanterModel' class='featuredModel animated animatedFadeInUp fadeInUp' style='display: none;'>
+								<div style="width: 100%; padding-bottom: 56.25%; position: relative"> 
+									<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> 
+										<iframe src="https://app.modelo.io/embedded/33JItZcTZX?viewport=false&autoplay=false&autoRotate=false&c_at0=20.170048903152146&c_at1=6.04416493020715&c_at2=10.114702416360167&c_theta=7.139387143782137&c_phi=0.04493292519943305&c_dis=15.4203730912962" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> 
+									</div> 
+								</div>
+						</div>
+						
+						<div id='livingRoomModel' class='featuredModel animated animatedFadeInUp fadeInUp' style='display: none;'>
+								<div style="width: 100%; padding-bottom: 56.25%; position: relative"> 
+									<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> 
+										<iframe src="https://app.modelo.io/embedded/5iHFs6ezVZ?viewport=false&autoplay=false&autoRotate=false" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> 
+									</div>
+								</div>
+						</div>
+
+						
 						<div id="filmWork4" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
@@ -362,7 +413,7 @@
 				{
     				modelingButton[i].className = modelingButton[i].className.replace(" active", "");
   				}
-
+		
   		// Show the current tab, and add an "active" class to the button that opened the tab
   			document.getElementById(modelingNum).style.display = "block";
  				event.currentTarget.className += " active";
@@ -376,7 +427,7 @@
 	function viewFilmWork(event, filmWorkNum) 
 		{
   		// Declare all variables
-  			var i, tabcontent, filmWorkButton, featurePhotos, featureVideos;
+  			var i, tabcontent, filmWorkButton, featurePhotos, featureVideos, featureModel;
 		
   		// Get all elements with class="tab-content" and hide them
   			tabcontent = document.getElementsByClassName("tab-content");
@@ -403,25 +454,43 @@
     				featurePhotos[i].className = featurePhotos[i].className.replace(" active", "");
   				}
 			
+			
 		// Get all elements with class="featuredVideo" and remove the class "active"
   			featureVideos = document.getElementsByClassName("featuredVideo");
   				for (i = 0; i < featureVideos.length; i++) 
 				{
     				featureVideos[i].className = featureVideos[i].className.replace(" active", "");
   				}
+			
+		// Get all elements with class="featuredModel" and remove the class "active"
+  			featureModel = document.getElementsByClassName("featuredModel");
+  				for (i = 0; i < featureModel.length; i++) 
+				{
+    				featureModel[i].className = featureModel[i].className.replace(" active", "");
+  				}
 		
 		// Get all elements with class="featuredVideo" and hide them
-  			tabcontent = document.getElementsByClassName("featuredVideo");
-  				for (i = 0; i < tabcontent.length; i++) 
+  			featureVideos = document.getElementsByClassName("featuredVideo");
+  				for (i = 0; i < featureVideos.length; i++) 
 				{
-    				tabcontent[i].style.display = "none";
+    				featureVideos[i].style.display = "none";
 					if(event.currentTarget.className == "active")
 						{
-							tabcontent[i].style.display = 'block';
+							featureVideos[i].style.display = 'block';
 						}
   				}
-
-
+		
+		// Get all elements with class="featuredModel" and hide them
+  			featureModel = document.getElementsByClassName("featuredModel");
+  				for (i = 0; i < featureModel.length; i++) 
+				{
+    				featureModel[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							featureModel[i].style.display = 'block';
+						}
+  				}
+		
   		// Show the current tab, and add an "active" class to the button that opened the tab
   			document.getElementById(filmWorkNum).style.display = "block";
  				event.currentTarget.className += " active";
@@ -430,7 +499,7 @@
 		
 	<!-- Show the Featured Video when a Feature Photo is pressed -->
 	<script>
-	function viewFeatureVideo(event, videoName, filmWorkSection) 
+	function viewFeature(event, featureName, filmWorkSection) 
 		{
   		// Declare all variables
   			var i, featuredVideo, featureButton, featureATag;
@@ -461,7 +530,7 @@
   				}
 			
   		// Show the current tab, and add an "active" class to the button that opened the tab
-  			document.getElementById(videoName).style.display = "block";
+  			document.getElementById(featureName).style.display = "block";
  				event.currentTarget.className += " active"; 
 		
 		// Show the current tab, and add an "active" class to the button that opened the tab
@@ -469,7 +538,7 @@
  				event.currentTarget.className += "";
 		}
 	</script>
-		
+	
 	<script>		
 		var typed = new Typed(".type", 
 		{
