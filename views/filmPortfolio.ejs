@@ -148,7 +148,9 @@
 						<!-- ----------- Film Work Videos ------------ -->
 						<!-- --Page 1-- -->
 						<div id='urbanRecipeVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
-							<iframe width="560" height="315" src="/videos/UrbanRecipe-FinalCut.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<video class="video-fluid z-depth-1" loop controls muted width='560' height='315'>
+  								<source src="/videos/UrbanRecipe-FinalCut.mp4" type="video/mp4" />
+							</video>
 						</div>
 						
 						<div id='antigoneVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
@@ -259,6 +261,9 @@
 								<div style="width: 100%; padding-bottom: 56.25%; position: relative"> 
 									<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> 
 										<iframe src="https://app.modelo.io/embedded/33JItZcTZX?viewport=false&autoplay=false&autoRotate=false&c_at0=20.170048903152146&c_at1=6.04416493020715&c_at2=10.114702416360167&c_theta=7.139387143782137&c_phi=0.04493292519943305&c_dis=15.4203730912962" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> 
+									<h4>
+										*This is a demo. Textures not representative of final render.	
+									</h4>
 									</div> 
 								</div>
 						</div>
@@ -267,21 +272,61 @@
 								<div style="width: 100%; padding-bottom: 56.25%; position: relative"> 
 									<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> 
 										<iframe src="https://app.modelo.io/embedded/5iHFs6ezVZ?viewport=false&autoplay=false&autoRotate=false" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> 
+										<h4>
+											*This is a demo. Textures not representative of final render.	
+										</h4>
 									</div>
 								</div>
 						</div>
 
-						
 						<div id="filmWork4" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
-									<a href='#' class='feature'>
+									<a href='#' class='feature' onclick="viewFeature(event,'photoGallery1','filmWork4')">
 										<img class='featurePhoto' id='cozumelFeature' src='/images/CozumelOceanFeature.png' />
-									</a>
+									</a>	
 								</div>
+							</div>
+						</div>
+						<!-- ----------- Photography Viewing ------------ -->
+						
+						<!-- ------------- The Photo that is Shown: Tab 1 -------- -->
+						<div id='photoViewing'>
+							<div id='photoGallery1' class='photoGallery photographyfeature-tab-content active animated animatedFadeInUp fadeInUp' style='display: none;'>
+								<img id='cozumelOceanPhoto' src='/images/CozumelOcean.jpg' />
+								<ul role="tablist" aria-label="Photography tabs" class="photographyTabs">
+									<li class='photograhyNum active'>
+										<a data-toggle="tab" href="#photographyList1"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery1')">
+											<span>1</span>
+										</a>
+									</li>
+									<li class='photographyNum'>
+										<a data-toggle="tab" href="#photographyList2"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery2')">
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						
+						<!-- ------------- The Photo that is Shown: Tab 2 -------- -->
+							<div id='photoGallery2' class='photoGallery photographyfeature-tab-content active animated animatedFadeInUp fadeInUp' style='display: none;'>
+								<img id='cozumelCruisePhoto' src='/images/CozumelCruiseShip.jpg' />
+								<ul role="tablist" aria-label="Photography tabs" class="photographyTabs">
+									<li class='photograhyNum'>
+										<a data-toggle="tab" href="#photographyList1"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery1')">
+											<span>1</span>
+										</a>
+									</li>
+									<li class='photographyNum active'>
+										<a data-toggle="tab" href="#photographyList2"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery2')">
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
 							</div>
     					</div>
 					</div>
+						
 		</div>
 	</section>
 
@@ -419,7 +464,37 @@
  				event.currentTarget.className += " active";
 		} 
 	</script>		
+	
+	<!-- Photography -->		
+	<script>
+	function viewPhotographyList(event, photographyNum) 
+		{
+  		// Declare all variables
+  			var i, tabcontent, photographyButton;
 		
+  		// Get all elements with class="photographyfeature-tab-content" and hide them
+  			tabcontent = document.getElementsByClassName("photographyfeature-tab-content");
+  				for (i = 0; i < tabcontent.length; i++) 
+				{
+    				tabcontent[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							tabcontent[i].style.display = 'block';
+						}
+  				}
+
+ 		// Get all elements with class="photographyButton" and remove the class "active"
+  			photographyButton = document.getElementsByClassName("photographyButton");
+  				for (i = 0; i < photographyButton.length; i++) 
+				{
+    				photographyButton[i].className = photographyButton[i].className.replace(" active", "");
+  				}
+		
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  			document.getElementById(photographyNum).style.display = "block";
+ 				event.currentTarget.className += " active";
+		} 
+	</script>		
 		<!-- -------------------  JS for Film Work Catagories ---------------------------- -->
 	
 	<!-- Shows/Reshow Feature Photos and Hides/Clears all Videos from being active/visible -->
@@ -427,7 +502,7 @@
 	function viewFilmWork(event, filmWorkNum) 
 		{
   		// Declare all variables
-  			var i, tabcontent, filmWorkButton, featurePhotos, featureVideos, featureModel;
+  			var i, tabcontent, filmWorkButton, featurePhotos, featureVideos, featureModel, photoGallery;
 		
   		// Get all elements with class="tab-content" and hide them
   			tabcontent = document.getElementsByClassName("tab-content");
@@ -468,6 +543,13 @@
 				{
     				featureModel[i].className = featureModel[i].className.replace(" active", "");
   				}
+			
+		// Get all elements with class="featuredModel" and remove the class "active"
+  			photoGallery = document.getElementsByClassName("photoGallery");
+  				for (i = 0; i < photoGallery.length; i++) 
+				{
+    				photoGallery[i].className = photoGallery[i].className.replace(" active", "");
+  				}
 		
 		// Get all elements with class="featuredVideo" and hide them
   			featureVideos = document.getElementsByClassName("featuredVideo");
@@ -491,22 +573,45 @@
 						}
   				}
 		
+		// Get all elements with class="featuredModel" and hide them
+  			photoGallery = document.getElementsByClassName("photoGallery");
+  				for (i = 0; i < photoGallery.length; i++) 
+				{
+    				photoGallery[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							photoGallery[i].style.display = 'block';
+						}
+  				}
+		
+		
   		// Show the current tab, and add an "active" class to the button that opened the tab
   			document.getElementById(filmWorkNum).style.display = "block";
  				event.currentTarget.className += " active";
 		} 
 	</script>
 		
-	<!-- Show the Featured Video when a Feature Photo is pressed -->
+	<!-- Show the Featured Content when a Feature Photo is pressed -->
 	<script>
 	function viewFeature(event, featureName, filmWorkSection) 
 		{
   		// Declare all variables
-  			var i, featuredVideo, featureButton, featureATag;
+  			var i, featuredVideo, featureButton, featureATag, photographyNum;
 		
   		// Get all elements with class="featuredVideo" and hide them
   			featuredVideo = document.getElementsByClassName("featuredVideo");
   				for (i = 0; i < featuredVideo.length; i++) 
+				{
+    				featuredVideo[i].style.display = "none";
+					if(event.currentTarget.className == "active")
+						{
+							featuredVideo[i].style.display = 'block';
+						}
+  				}
+		
+		// Get all elements with class="photographyNum" and hide them
+  			photographyNum = document.getElementsByClassName("photographyNum");
+  				for (i = 0; i < photographyNum.length; i++) 
 				{
     				featuredVideo[i].style.display = "none";
 					if(event.currentTarget.className == "active")

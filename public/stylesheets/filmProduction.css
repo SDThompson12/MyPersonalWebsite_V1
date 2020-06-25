@@ -305,6 +305,12 @@ ul.directionFeatures li
     list-style: none;
 }
 
+ul.filmDirectionTabs 
+{
+	padding-right: 20px;
+    float: right;
+}
+
 ul.filmDirectionTabs li
 {
 	list-style: none;
@@ -372,6 +378,54 @@ ul.modelingTabs li.active span
 a.modelingButton span
 {
 	color: #FFFFFF;
+}
+
+/* ------Photography Features------ */
+ul.photographyFeatures li
+{
+    list-style: none;
+}
+
+ul.photographyTabs 
+{
+	padding-right: 20px;
+    float: right;
+}
+
+ul.photographyTabs li
+{
+	list-style: none;
+	display: inline;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding-left: 30px;
+}
+
+a.photographyButton span
+{
+	color: #FFFFFF;
+}
+
+/* ------- Photography Image ------- */
+div.photoGallery
+{
+    height: 485px;
+}
+
+#cozumelOceanPhoto 
+{
+    width: 127%;
+    height: 100%;
+    padding: 25px 0px 25px 24px;
+	object-fit: contain;
+}
+
+#cozumelCruisePhoto 
+{
+    width: 127%;
+    height: 100%;
+    padding: 25px 0px 25px 24px;
+	object-fit: contain;
 }
 
 
