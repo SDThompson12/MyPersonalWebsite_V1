@@ -262,7 +262,7 @@ button
 }
 
 /* ---------------------------- Feature Section ---------------- */
-#filmWorkTitle
+#filmWorkTitle, #cardSectionTitle
 {
 	font-family: 'Roboto Mono', sans-serif;
     color: #FFFFFF;
@@ -380,6 +380,13 @@ a.modelingButton span
 	color: #FFFFFF;
 }
 
+.featuredModel h4 
+{
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
 /* ------Photography Features------ */
 ul.photographyFeatures li
 {
@@ -485,6 +492,34 @@ div.photoGallery
 	object-position: 20% -6px;
 }
 
+/* -------------- Award & Certification Section ------------- */
+#awardsCertification
+{
+    content: '';
+    width: 100%;
+	border-top: solid 1px #FFFFFF;
+    border-bottom: solid 1px #FFFFFF;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+	text-align: center;
+	margin-bottom: 125px;
+}
+
+#awardsCertification img
+{
+	padding: 25px 10px 0px 10px;
+}
+
+#awardsCertification p 
+{
+    margin-bottom: 20px;
+	margin-left: -85px;
+	font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+	color: #c3c3c3;
+}
+
 /* ---------------------- Card Section ---------------------- */
 .card
 {
@@ -494,6 +529,11 @@ div.photoGallery
 	background: #FFFFFF;
 	display: inline-flex;
 	margin: 10px 115px;
+}
+
+#cardSectionTitle
+{
+	padding-bottom: 30px;
 }
 
 .row 
