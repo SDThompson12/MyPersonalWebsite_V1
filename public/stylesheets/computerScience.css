@@ -1,0 +1,567 @@
+body
+{
+	margin: 0;
+	padding-top: 70px;
+	font-family: sans-serif;
+	background: #000000;
+	min-height: 1000px;
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0px 100px;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #000000;
+	transition: 0.6s;
+}
+
+header .logo
+{
+	position: relative;
+	color: #ffffff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 2em;
+	transition: 0.6s;
+	letter-spacing: 2px;
+	font-family: 'Teko', sans-serif;
+	text-shadow: 0 2px 5px rgba(255,0,0,2);
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav
+{
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 70px;
+ background: rgba(0,0,0,0.6);
+ box-sizing: border-box;
+}
+
+header nav ul
+{	
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li.active ul
+{
+	display: block;
+}
+
+header nav ul li
+{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li ul
+{
+	Left: 0;
+	background: #000000;
+	position: absolute;
+	display: none;
+}
+
+header nav ul li ul li 
+{
+	display: block;
+	width: 200px;
+}
+ 
+header nav ul li a
+{
+	position: relative;
+ 	display: block;
+ 	height: 70px;
+ 	line-height: 70px;
+ 	padding: 0 20px;
+ 	box-sizing: border-box;
+ 	color: #fff;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	transition: .5s;
+	letter-spacing: 2px;
+}
+
+header nav ul li a.sub-catagory
+{
+	letter-spacing: 1px;
+}
+
+header nav ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+
+header nav ul li a:hover:before
+{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+header nav ul li a:hover
+{
+	color:#000000;
+}
+
+header nav ul li a:hover,
+header nav ul li a.current
+{
+	color: #A91101;
+	background: #ffffff;
+}
+
+container
+{
+	width: 100%;
+}
+
+h1
+{
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	margin: 0;
+	padding-top: 100px;
+	font-family: sans-serif;
+	color: #ffffff;
+	font-size: 40px;
+	list-style: none;
+}
+
+/* -------------------------------- Sections ------------------------------ */
+
+section
+{
+	width: 100%;
+	height: 100%;
+	padding: 40px 100px 100px;
+}
+
+/* -------------------------- Computer Science Featured Project Info --------- */
+#featuredProjectTitle, #previousProjectTitle
+{
+	font-family: 'Roboto Mono', sans-serif;
+    color: #FFFFFF;
+	font-weight: 100;
+    font-size: 3.1em;
+    text-align: end;
+    padding-right: 30px;
+    text-decoration: underline;
+	text-underline-position: under;
+}
+
+.featuredProjectInfo
+{
+    position: relative;
+    margin: auto;
+    text-align: right;
+}
+
+#colorPickerInfo
+{
+    position: relative;
+    margin: auto;
+    text-align: left;
+}
+
+#colorPickerBrowser
+{
+	margin-left: -30px;
+}
+
+.featuredProjectInfo h3
+{
+	margin-bottom: -15px;
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+	padding-top: 20px;
+	letter-spacing: 1px;
+}
+
+.featuredProjectInfo h5
+{
+	font-family: 'Roboto', sans-serif;
+	color: #f5f5f5;
+}
+
+
+.featuredProjectInfo h6
+{
+	font-family: 'Roboto Mono', sans-serif;
+	color: #e6e6e6;
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+
+.featuredProjectInfo p
+{
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 10px;
+	color: #a5a5a5;
+	letter-spacing: 1px;
+}
+
+.featuredProjectInfo span
+{
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 10px;
+	color: #FF0000;
+}
+
+/* -------------------------- Computer Science Featured Carousel --------- */
+.featuredProjectCarousel .browser
+{
+	margin-top: 35px;
+}
+
+.featuredProjectCarousel .bar 
+{
+	width: 100%;
+    height: 30px;
+    margin-bottom: 1px;
+    background: #262324;
+    background-color: rgba(49, 49, 49, 0.9);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.featuredProjectCarousel .item img
+{
+	
+	height: 285px !important;
+	width: 2000px;
+}
+
+.featuredProjectCarousel .carousel-indicators li 
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.featuredProjectCarousel .carousel-indicators .active 
+{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #000;
+}
+
+.featuredProjectCarousel .carousel-indicators
+{
+	bottom: 0px !important;
+}
+
+.featuredProjectCarousel .circle
+{
+    background-color: #FF0000;
+}
+
+.featuredProjectCarousel .bar .gui .circle
+{
+    width: 8px;
+    height: 8px;
+    margin: 11px 3px;
+    float: right;
+    background: #FFFFFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#viewProjectBtn
+{
+	color: #fff;
+    background-color: #252729;
+    border-color: #252729;
+}
+
+.projectLinks 
+{
+    margin-top: 10px;
+    float: right;
+}
+
+.projectLinks a 
+{
+	font-size: 30px;
+	padding: 10px 10px 10px 10px;
+}
+
+.projectLinks a:hover
+{
+	color: #ffffff;
+}
+
+/* -------------------------- Previous Projects Card Section -------------- */
+.previousProject-container 
+{
+  height: 330px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgb(12, 12, 12);
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+}
+
+.previousProject-container h3
+{
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+	padding-top: 20px;
+	letter-spacing: 1px;
+}
+
+.projectDescription p
+{
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 10px;
+	color: #a5a5a5;
+	letter-spacing: 1px;
+}
+
+.previousProject-container footer
+{
+	display: -webkit-inline-box;
+}
+
+.previousProject-technogies 
+{
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+
+.previousProjectImage
+{
+	width: 200px;
+}
+
+.githubCardLink 
+{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.githubCardLink a:hover
+{
+	color: #ff0000;
+}
+
+.previousProject-technogies span {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 10px;
+    color: #FF0000;
+}
+
+/* ------------------------------- Side Column ---------------------------- */
+
+.side-selects a:focus, .side-selects a:hover
+{
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+a 
+{
+    color: #444;
+    text-decoration: none;
+}
+
+.side-selects
+{
+	width: 40px;
+    position: fixed;
+    bottom: -25px;
+    left: 15px;
+    right: auto;
+    z-index: 10;
+    color: #444;
+	font-size: 25px;
+}
+
+.side-selects:after
+{
+	content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: #FFFFFF;
+    margin: 0px auto;
+}
+
+#instagramIcon:hover
+{
+	color: rgb(255,0,0)
+}
+
+.professional_Links
+{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.professional_Links li
+{
+	padding-bottom: 20px;
+}
+
+/*-------- Bottom Selects -----*/
+.bottom-selects
+{
+	display: none;
+}
+
+
+/* ----------------------------  Responsive CSS -----------------------------*/
+#menuToggle
+{
+	color: #FFFFFF;
+	float: right;
+	line-height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px)
+{
+	
+	/* ----------- Header / Navbar Responsiveness ---------- */
+	header
+	{
+		padding: 0 20px;
+	}
+	#menuToggle
+	{
+		display: block;
+	}
+	header nav
+	{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #000000;
+		top: 50px;
+		Left: -100%;
+		transition: 0.5s;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	header nav.active
+	{
+		left: 0;
+	}
+	
+	header nav ul
+	{
+		display: block;
+		text-align: center;
+		float: none;
+	}
+	header nav ul li a
+	{
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	header nav ul li.active ul
+	{
+		position: relative;
+		background: #000000;
+	}
+	
+	header nav ul li ul li
+	{
+		width: 100%;
+	}	
+}
+
+/* ------------------------------ Smaller than Tablet Sized Responsiveness ----------- */
+@media (max-width: 767px)
+{
+	/* Sidebar Sections--------------- */
+	.professional_Links
+	{
+		display: flex;
+    	flex-direction: row;
+    	-webkit-box-align: center;
+    	align-items: center;
+    	padding: 0px;
+    	margin: 0px;
+    	list-style: none;
+	}
+	
+	.professional_Links li
+	{
+		padding-left: 25px;
+	}
+	
+	.bottom-selects
+	{
+		display: block;
+   		width: max-content;
+    	position: absolute;
+    	margin: 0 auto;
+    	z-index: 10;
+    	color: #444;
+    	font-size: 25px;
+    	left: 25%;
+	}
+	
+	.side-selects
+	{
+		display: none;
+	}
+	.side-selects:after
+	{
+		display: none;
+	}
+}
