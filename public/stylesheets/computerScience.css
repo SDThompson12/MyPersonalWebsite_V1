@@ -177,6 +177,7 @@ section
     padding-right: 30px;
     text-decoration: underline;
 	text-underline-position: under;
+	padding-bottom: 25px;
 }
 
 .featuredProjectInfo
@@ -333,15 +334,24 @@ section
 }
 
 /* -------------------------- Previous Projects Card Section -------------- */
+#previousProjects
+{
+	height: 850px;
+}
+
 .previousProject-container 
 {
-  height: 330px;
-  width: 250px;
-  padding: 20px;
-  border-radius: 5px;
-  background: rgb(12, 12, 12);
-  position: relative;
-  box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	height: 330px;
+	width: 250px;
+	padding: 20px;
+	border-radius: 5px;
+	background: rgb(12, 12, 12);
+	position: relative;
+	box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	float: left;
+	margin-right: 45px;
+	margin-top: 25px;
+	left: 45px;
 }
 
 .previousProject-container h3
@@ -381,8 +391,8 @@ section
 .githubCardLink 
 {
     font-size: 20px;
-    margin-top: 0px;
-    margin-left: 20px;
+    margin-top: -5px;
+    margin-left: 30px;
 }
 
 .githubCardLink a:hover
@@ -390,7 +400,15 @@ section
 	color: #ff0000;
 }
 
-.previousProject-technogies span {
+#smartHomeGit
+{
+	font-size: 20px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.previousProject-technogies span 
+{
     font-family: 'Roboto Mono', sans-serif;
     font-size: 10px;
     color: #FF0000;
