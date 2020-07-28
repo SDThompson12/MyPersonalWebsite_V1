@@ -1,0 +1,382 @@
+body
+{
+	margin: 0;
+	padding-top: 70px;
+	font-family: sans-serif;
+	background: #000000;
+	min-height: 1000px;
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0px 100px;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #000000;
+	transition: 0.6s;
+}
+
+header .logo
+{
+	position: relative;
+	color: #ffffff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 2em;
+	transition: 0.6s;
+	letter-spacing: 2px;
+	font-family: 'Teko', sans-serif;
+	text-shadow: 0 2px 5px rgba(255,0,0,2);
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav
+{
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 70px;
+ background: rgba(0,0,0,0.6);
+ box-sizing: border-box;
+}
+
+header nav ul
+{	
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li.active ul
+{
+	display: block;
+}
+
+header nav ul li
+{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li ul
+{
+	Left: 0;
+	background: #000000;
+	position: absolute;
+	display: none;
+}
+
+header nav ul li ul li 
+{
+	display: block;
+	width: 200px;
+}
+ 
+header nav ul li a
+{
+	position: relative;
+ 	display: block;
+ 	height: 70px;
+ 	line-height: 70px;
+ 	padding: 0 20px;
+ 	box-sizing: border-box;
+ 	color: #fff;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	transition: .5s;
+	letter-spacing: 2px;
+}
+
+header nav ul li a.sub-catagory
+{
+	letter-spacing: 1px;
+}
+
+header nav ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+
+header nav ul li a:hover:before
+{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+header nav ul li a:hover
+{
+	color:#000000;
+}
+
+header nav ul li a:hover,
+header nav ul li a.current
+{
+	color: #A91101;
+	background: #ffffff;
+}
+
+container
+{
+	width: 100%;
+}
+
+h1
+{
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	margin: 0;
+	padding-top: 100px;
+	font-family: sans-serif;
+	color: #ffffff;
+	font-size: 40px;
+	list-style: none;
+}
+
+/* ------------------------------- Side Column ---------------------------- */
+.side-selects a:focus, .side-selects a:hover
+{
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+a 
+{
+    color: #444;
+    text-decoration: none;
+}
+
+.side-selects 
+{
+    width: 40px;
+    position: fixed;
+    bottom: -60px;
+    left: 15px;
+    right: auto;
+    z-index: 10;
+    color: #444;
+    font-size: 25px;
+}
+
+.side-selects:after
+{
+	content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: #FFFFFF;
+    margin: 0px auto;
+}
+
+#instagramIcon:hover
+{
+	color: rgb(255,0,0)
+}
+
+.professional_Links
+{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.professional_Links li
+{
+	padding-bottom: 20px;
+}
+
+/*-------- Bottom Selects -----*/
+.bottom-selects
+{
+	display: none;
+}
+
+
+
+/* -------------------------------- Sections ------------------------------ */
+section
+{
+	width: 100%;
+	height: 100%;
+	padding: 150px 100px 100px;
+}
+
+.section-header
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
+}
+
+/* ----------------------------  Responsive CSS -----------------------------*/
+#menuToggle
+{
+	color: #FFFFFF;
+	float: right;
+	line-height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px)
+{
+	
+	/* ----------- Header / Navbar Responsiveness ---------- */
+	header
+	{
+		padding: 0 20px;
+	}
+	#menuToggle
+	{
+		display: block;
+	}
+	header nav
+	{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #000000;
+		top: 50px;
+		Left: -100%;
+		transition: 0.5s;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	header nav.active
+	{
+		left: 0;
+	}
+	
+	header nav ul
+	{
+		display: block;
+		text-align: center;
+		float: none;
+	}
+	header nav ul li a
+	{
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	header nav ul li.active ul
+	{
+		position: relative;
+		background: #000000;
+	}
+	
+	header nav ul li ul li
+	{
+		width: 100%;
+	}	
+}
+
+/* ------------------------------ Smaller than Tablet Sized Responsiveness ----------- */
+@media (max-width: 767px)
+{
+	/* Sidebar Sections--------------- */
+	.professional_Links
+	{
+		display: flex;
+    	flex-direction: row;
+    	-webkit-box-align: center;
+    	align-items: center;
+    	padding: 0px;
+    	margin: 0px;
+    	list-style: none;
+	}
+	
+	.professional_Links li
+	{
+		padding-left: 25px;
+	}
+	
+	.bottom-selects
+	{
+		display: block;
+   		width: max-content;
+    	position: absolute;
+    	margin: 0 auto;
+    	z-index: 10;
+    	color: #444;
+    	font-size: 25px;
+    	left: 25%;
+	}
+	
+	.side-selects
+	{
+		display: none;
+	}
+	.side-selects:after
+	{
+		display: none;
+	}	
+}
+
+@media (max-width: 426px)
+{
+	
+}
+
+@media (max-width: 376px)
+{
+	/*-------- Bottom Selects ----------- */
+	.bottom-selects 
+	{
+    	left: 21%;
+	}
+}
+
+@media (max-width: 321px)
+{
+	/* -------- Bottom Selects Section --------- */
+	.bottom-selects 
+	{
+    	left: 18%;
+	}
+	
+}
+
+/* ------------------------- For Mobile Horizontal Reponsiveness -------------------- */
+@media screen and (max-width: 825px) and (max-height: 425px) 
+{
+	.side-selects
+	{
+    	width: 40px;
+    	position: fixed;
+    	bottom: -180px;
+    	left: 15px;
+    	right: auto;
+    	z-index: 10;
+    	color: #444;
+    	font-size: 25px;
+	}
+}

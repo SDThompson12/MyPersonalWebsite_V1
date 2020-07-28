@@ -646,16 +646,16 @@ a
     text-decoration: none;
 }
 
-.side-selects
+.side-selects 
 {
-	width: 40px;
+    width: 40px;
     position: fixed;
-    bottom: -25px;
+    bottom: -60px;
     left: 15px;
     right: auto;
     z-index: 10;
     color: #444;
-	font-size: 25px;
+    font-size: 25px;
 }
 
 .side-selects:after

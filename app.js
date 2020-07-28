@@ -11,11 +11,13 @@ app.use(express.static(__dirname + "/public"));
 var mainHomePageRoute = require('./routes/mainPage.js');
 var filmPortfolioRoute = require('./routes/filmProductionPortfolio.js');
 var compScienceRoute = require('./routes/compSciPortfolio.js');
+var contactRoute = require('./routes/contactPage.js')
 
 //Imports Routes
 app.use("/", mainHomePageRoute);
 app.use("/film_production", filmPortfolioRoute)
 app.use("/computer_science", compScienceRoute)
+app.use("/contact", contactRoute)
 
 app.listen(3152, function()
 {
