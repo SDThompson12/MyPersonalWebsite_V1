@@ -336,7 +336,8 @@ section
 /* -------------------------- Previous Projects Card Section -------------- */
 #previousProjects
 {
-	height: 850px;
+	height: max-content;
+	overflow: hidden;
 }
 
 .previousProject-container 
@@ -358,7 +359,6 @@ section
 {
 	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
-	padding-top: 20px;
 	letter-spacing: 1px;
 }
 
@@ -400,18 +400,46 @@ section
 	color: #ff0000;
 }
 
-#smartHomeGit
-{
-	font-size: 20px;
-    margin-top: 35px;
-    margin-left: 15px;
-}
-
 .previousProject-technogies span 
 {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 10px;
     color: #FF0000;
+}
+
+/*---- Card Github Icons ----*/
+#movieExpressGit
+{
+    margin-top: 15px;
+}
+
+#smartHomeGit
+{
+	font-size: 20px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+#scoreKeeperGit
+{
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+#toDoListGit
+{
+    margin-top: 5px;
+}
+
+#photoGridGit
+{
+    margin-left: 120px;
+	margin-top: -8px;
+}
+
+#patatapCloneGit 
+{
+    margin-top: 7px;
 }
 
 /* ------------------------------- Side Column ---------------------------- */
@@ -582,4 +610,173 @@ a
 	{
 		display: none;
 	}
+	
+	.previousProject-container 
+	{
+		left: -25px;
+	}
+	
 }
+
+@media (max-width: 426px)
+{
+	#yelpcampInfo 
+	{
+    	width: 320px;
+    	margin-left: -50px;
+	}
+	
+	#colorPickerBrowser 
+	{
+   		margin-left: -80px;
+	}
+	
+	#colorPickerInfo 
+	{
+    	position: relative;
+    	margin: auto;
+    	text-align: left;
+    	width: 320px;
+   		margin-left: -50px;
+	}
+	
+	.browser 
+	{
+    	width: 360px;
+    	margin-left: -85px;
+	}
+	
+	.featuredProjectCarousel .item img 
+	{
+    	height: 170px !important;
+    	width: 2000px;
+	}
+}
+
+@media (max-width: 376px)
+{
+	/* ------------ Browser Section --------- */
+	.projectLinks 
+	{
+    	margin-top: 10px;
+ 		width: 185px;
+	}
+	
+	.browser 
+	{
+    	width: 325px;
+    	margin-left: -85px;
+	}
+	
+	#colorPickerBrowser 
+	{
+    	margin-left: -85px;
+	}
+	
+	.featuredProjectCarousel .item img 
+	{
+    	height: 150px !important;
+    	width: 2000px;
+	}
+	
+	#featuredProjectTitle, #previousProjectTitle 
+	{
+    	margin-left: -25px;
+	}
+	
+	/* ------------ Browser Info Section --------- */
+	#yelpcampInfo 
+	{
+    	width: 320px;
+    	margin-left: -65px;
+	}
+	
+	#colorPickerInfo 
+	{
+    	position: relative;
+    	margin: auto;
+    	text-align: left;
+    	width: 320px;
+    	margin-left: -70px;
+	}
+	
+	/* ------------ Card Section --------- */
+	.previousProject-container 
+	{
+    	left: -45px;
+	}
+
+	/*-------- Bottom Selects ----------- */
+	.bottom-selects 
+	{
+    	left: 21%;
+	}
+}
+
+@media (max-width: 321px)
+{
+	/* -------- Browser Info Section --------- */
+	#yelpcampInfo 
+	{
+    	width: 320px;
+    	margin-left: -95px;
+	}
+	
+	#colorPickerInfo 
+	{
+    	margin-left: -95px;
+	}
+	
+	/* -------- Browser Section --------- */
+	.browser 
+	{
+    	width: 300px;
+    	margin-left: -102px;
+	}
+	
+	#colorPickerBrowser 
+	{
+    	margin-left: -102px;
+	}
+	
+	.featuredProjectCarousel .item img 
+	{
+    	height: 140px !important;
+    	width: 2000px;
+	}
+	
+	#featuredProjectTitle, #previousProjectTitle 
+	{
+    	margin-left: -55px;
+	}
+	
+	/* -------- Card Section --------- */
+	.previousProject-container 
+	{
+    	left: -75px;
+	}
+	
+	/* -------- Bottom Selects Section --------- */
+	.bottom-selects 
+	{
+    	left: 18%;
+	}
+	
+}
+
+/* ------------------------- For Mobile Horizontal Reponsiveness -------------------- */
+@media screen and (max-width: 825px) and (max-height: 425px) 
+{
+	.side-selects
+	{
+    	width: 40px;
+    	position: fixed;
+    	bottom: -180px;
+    	left: 15px;
+    	right: auto;
+    	z-index: 10;
+    	color: #444;
+    	font-size: 25px;
+	}
+}
+

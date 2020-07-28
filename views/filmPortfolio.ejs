@@ -37,10 +37,10 @@
 			
 			<div orientation='left' class='side-selects'>
 				<ul class='professional_Links'>
-					<li id="instagramIcon"><a href='https://www.instagram.com/sean_sj_thompson/' arial-label='Instagram'><i class="fab fa-instagram"></i></a></li>
-					<li> <a href='https://www.linkedin.com/in/sean-thompson-b8a6a7161/' arial-label='LinkedIn'><i class="fab fa-linkedin-in"></i></a></li>
-					<li> <a href='https://vimeo.com/seanthompsonjr' arial-label='Vimeo'><i class="fab fa-vimeo"></i></a></li>
-					<li> <a href='https://github.com/SDThompson12' arial-label='Github'><i class="fab fa-github"></i></a></li>
+					<li id="instagramIcon"><a href='https://www.instagram.com/sean_sj_thompson/' target="_blank" arial-label='Instagram'><i class="fab fa-instagram"></i></a></li>
+					<li> <a href='https://www.linkedin.com/in/sean-thompson-b8a6a7161/' target="_blank" arial-label='LinkedIn'><i class="fab fa-linkedin-in"></i></a></li>
+					<li> <a href='https://vimeo.com/seanthompsonjr' target="_blank" arial-label='Vimeo'><i class="fab fa-vimeo"></i></a></li>
+					<li> <a href='https://github.com/SDThompson12' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a></li>
 				</ul>
 			</div>
 	
@@ -54,7 +54,7 @@
 		Featured Works
 	</h3>
 		<div id='filmMenu'>
-					<div class="tab col-sm-3">
+					<div class="tab col-md-3 col-sm-12">
 						<ul role="tablist" aria-label="FilmWork tabs" class="filmWorkTabs">
 							<li class='active'>
 								<a data-toggle="tab" href="#filmWork1"  class="filmWorkButton" onclick="viewFilmWork(event,'filmWork1')">
@@ -78,7 +78,7 @@
 							</li>
 						</ul>
 					</div>
-					<div id='filmWorkDetails' class='col-sm-9'>
+					<div id='filmWorkDetails' class='col-md-9 col-sm-12'>
    						<div id="filmWork1" class="tab-content active" style="display: block;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
@@ -169,6 +169,7 @@
 						<div id='catfishParodyVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
 							<iframe src="https://player.vimeo.com/video/429343697" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 						</div>
+						
 						<div id='lifestyleVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
 							<iframe src="https://player.vimeo.com/video/429363462" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 						</div>
@@ -212,11 +213,11 @@
 						<!-- ----------- Aerial Videography Videos ------------ -->
 						<!-- --Page 1-- -->
 						<div id='piedmontParkVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
-							<iframe src="https://player.vimeo.com/video/429428724" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+							<iframe src="https://player.vimeo.com/video/429428724" id='piedmontParkIFrame' width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 						</div>
 						
 						<div id='eliteScholarsVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
-							<iframe src="https://player.vimeo.com/video/429428900" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+							<iframe src="https://player.vimeo.com/video/429428900" id='eliteScholarsIFrame' width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 						</div>
 						
 						<div id="filmWork3" class="tab-content" style="display: none;">
@@ -293,37 +294,34 @@
 						<!-- ------------- The Photo that is Shown: Tab 1 -------- -->
 						<div id='photoViewing'>
 							<div id='photoGallery1' class='photoGallery photographyfeature-tab-content active animated animatedFadeInUp fadeInUp' style='display: none;'>
-								<img id='cozumelOceanPhoto' src='/images/filmfeature/cozumel/CozumelOcean.jpg' />
-								<ul role="tablist" aria-label="Photography tabs" class="photographyTabs">
-									<li class='photograhyNum active'>
-										<a data-toggle="tab" href="#photographyList1"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery1')">
-											<span>1</span>
+								<!--Carousel-->
+								<div class="browser">
+									<div id="cozumelCarousel" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#cozumelCarousel" data-slide-to="0" class="active"></li>
+											<li data-target="#cozumelCarousel" data-slide-to="1" class=""></li>
+										</ol>
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img class="first-slide" src="images/filmfeature/cozumel/CozumelCruiseShip.jpg" alt="First slide" id='#cozumelCruisePhoto '>
+											</div>
+											<div class="item">
+												<img class="second-slide" src="images/filmfeature/cozumel/CozumelOcean.jpg" alt="Second slide" id='#cozumelOceanPhoto'>
+											</div>
+										</div>
+										<a class="left carousel-control" href="#cozumelCarousel" role="button" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
 										</a>
-									</li>
-									<li class='photographyNum'>
-										<a data-toggle="tab" href="#photographyList2"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery2')">
-											<span>2</span>
+										<a class="right carousel-control" href="#cozumelCarousel" role="button" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
 										</a>
-									</li>
-								</ul>
+									</div>
+								</div><!-- /.carousel -->
 							</div>
-						
-						<!-- ------------- The Photo that is Shown: Tab 2 -------- -->
-							<div id='photoGallery2' class='photoGallery photographyfeature-tab-content active animated animatedFadeInUp fadeInUp' style='display: none;'>
-								<img id='cozumelCruisePhoto' src='/images/filmfeature/cozumel/CozumelCruiseShip.jpg' />
-								<ul role="tablist" aria-label="Photography tabs" class="photographyTabs">
-									<li class='photograhyNum'>
-										<a data-toggle="tab" href="#photographyList1"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery1')">
-											<span>1</span>
-										</a>
-									</li>
-									<li class='photographyNum active'>
-										<a data-toggle="tab" href="#photographyList2"  class="photographyButton" onclick="viewPhotographyList(event,'photoGallery2')">
-											<span>2</span>
-										</a>
-									</li>
-								</ul>
-							</div>
+							
     					</div>
 					</div>
 						
@@ -331,11 +329,13 @@
 	</section>
 	
 	<!-- ----------------------- Awards and Certification ----------------- -->
+	<!--
 	<div id='awardsCertification'>
 		<img src='/images/filmfeature/avid-cert-logo-mc-user.jpg' style='width: 200px;'>
 		<p>Awarded: May 2020</p>
+	-->
 		<!-- <img src='/images/Fake-Film-Awards.png' style='width: 1100px;'> -->
-	</div>
+	<!-- </div> -->
 
 	<!-- ----------------------- Info Cards Section ----------------------- -->
 	
@@ -389,10 +389,10 @@
 	<!-- ----------------------- Bottom Selects ----------------------- -->
 		<div orientation='center' class='bottom-selects'>
 				<ul class='professional_Links'>
-					<li id="instagramIcon"><a href='https://www.instagram.com/sean_sj_thompson/' arial-label='Instagram'><i class="fab fa-instagram"></i></a></li>
-					<li> <a href='https://www.linkedin.com/in/sean-thompson-b8a6a7161/' arial-label='LinkedIn'><i class="fab fa-linkedin-in"></i></a></li>
-					<li> <a href='https://vimeo.com/seanthompsonjr' arial-label='Vimeo'><i class="fab fa-vimeo"></i></a></li>
-					<li> <a href='https://github.com/SDThompson12' arial-label='Github'><i class="fab fa-github"></i></a></li>
+					<li id="instagramIcon"><a href='https://www.instagram.com/sean_sj_thompson/' target="_blank" arial-label='Instagram'><i class="fab fa-instagram"></i></a></li>
+					<li> <a href='https://www.linkedin.com/in/sean-thompson-b8a6a7161/' target="_blank" arial-label='LinkedIn'><i class="fab fa-linkedin-in"></i></a></li>
+					<li> <a href='https://vimeo.com/seanthompsonjr' target="_blank" arial-label='Vimeo'><i class="fab fa-vimeo"></i></a></li>
+					<li> <a href='https://github.com/SDThompson12' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a></li>
 				</ul>
 		</div>
 </div>
