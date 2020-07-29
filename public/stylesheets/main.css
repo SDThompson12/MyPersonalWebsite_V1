@@ -608,6 +608,38 @@ button
     border-radius: 0px;
 }
 
+/* ===================== Microsoft Edge/ Internet Explorer Changes =============== */
+@supports (-ms-ime-align:auto)
+{
+	.experienceTabs li
+	{
+		display: flex;
+	} 
+}
+@supports (-ms-accelerator:true) 
+{
+	.experienceTabs li
+	{
+		display: flex;
+	} 
+}
+@supports (-ms-accelerator:true) 
+{
+  /* IE Edge 12+ CSS styles go here */ 
+	.experienceTabs li
+	{
+		display: flex;
+	} 
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+{
+   /* IE10+ CSS styles go here */
+	.experienceTabs li
+	{
+		display: flex;
+	} 
+}
+
 /* ---Animation of Tabs-------- */
 
 @keyframes fadeInUp {

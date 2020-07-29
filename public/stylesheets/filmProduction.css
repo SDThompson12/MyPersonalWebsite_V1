@@ -300,6 +300,96 @@ button
 
 /* ------Film Direction Features------ */
 
+
+/* ============================ Microsoft Edge/Internet Explorer Specific CSS ================================ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+{
+   /* IE10+ CSS styles go here */
+	#filmDirectionList1
+	{
+		width: 582px;
+	}   
+	.filmWorkTabs li
+	{
+		display: flex;
+	} 
+	#aerialList1
+	{
+		width: 582px;
+	} 
+	#modelingList1
+	{
+		width: 582px;
+	}
+	#cozumelFeature
+	{
+		width: 582px;
+	} 
+	#cozumelFeature
+	{
+		object-position: 20% -228px;
+	} 
+}
+
+@supports (-ms-accelerator:true) 
+{
+  /* IE Edge 12+ CSS styles go here */ 
+	#filmDirectionList1
+	{
+		width: 582px;
+	} 
+	.filmWorkTabs li
+	{
+		display: flex;
+	} 
+	#aerialList1
+	{
+		width: 582px;
+	} 
+	#modelingList1
+	{
+		width: 582px;
+	}
+	#cozumelFeature
+	{
+		width: 582px;
+	} 
+	#cozumelFeature
+	{
+		object-position: 20% -228px;
+	} 
+}
+
+@supports (-ms-ime-align:auto) 
+{
+   	#filmDirectionList1
+	{
+		width: 582px;
+	} 
+	.filmWorkTabs li
+	{
+		display: flex;
+	} 
+	#aerialList1
+	{
+		width: 582px;
+	} 
+	#modelingList1
+	{
+		width: 582px;
+	}
+	#cozumelFeature
+	{
+		width: 582px;
+	} 
+	#cozumelFeature
+	{
+		object-position: 20% -228px;
+	} 
+}
+
+/* =============================================================== */
+
 ul.directionFeatures li
 {
     list-style: none;

@@ -4,7 +4,6 @@ body
 	padding-top: 70px;
 	font-family: sans-serif;
 	background: #000000;
-	min-height: 1000px;
 }
 
 header
@@ -235,6 +234,82 @@ section
 	font-weight: lighter;
 }
 
+/* ----------------- Connect Sections ---------------- */
+.connectTag 
+{
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    font-family: "Roboto Mono";
+    font-size: 2.5em;
+	font-weight: 200;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 60px;
+	margin-bottom: 35px;
+    padding-bottom: 23.2px;
+}
+
+#inquiresText 
+{
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    font-family: "Roboto Mono";
+    font-size: 12px;
+    font-weight: 900;
+    color: #545454;
+    text-decoration: none;
+    margin-left: -50px;
+    padding-bottom: 23.2px;
+}
+
+#inquiresText a
+{
+    color: #e6e6e6;
+    text-decoration: underline;
+}
+
+.contactInfo 
+{
+    margin-top: -150px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.contactText h4 
+{
+    width: 170px;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-weight: 200;
+    color: #FFFFFF;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 4px;
+}
+
+.contactText ul 
+{
+    margin-left: -40px;
+    list-style-type: none;
+}
+
+.contactText li 
+{
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #bbbbbb;
+}
+
+.contactText li a 
+{
+    color: #5f5f5f;
+}
+
 /* ----------------------------  Responsive CSS -----------------------------*/
 #menuToggle
 {
@@ -299,6 +374,53 @@ section
 	}	
 }
 
+/* ------------------------------ Tablet Size Responsiveness ------------------------ */
+@media (max-width: 769px)
+{
+	.connectTag 
+	{
+    	-webkit-box-align: center;
+    	align-items: center;
+   		text-align: center;
+    	width: 600px;
+    	font-family: "Roboto Mono";
+    	font-size: 2.5em;
+    	font-weight: 200;
+    	color: #FFFFFF;
+    	text-decoration: none;
+    	margin-left: 0px;
+    	margin-bottom: 35px;
+    	padding-bottom: 23.2px;
+	}
+	
+	#inquiresText 
+	{
+    	-webkit-box-align: center;
+    	align-items: center;
+    	text-align: center;
+    	width: 600px;
+    	font-family: "Roboto Mono";
+    	font-size: 12px;
+    	font-weight: 900;
+    	color: #545454;
+    	text-decoration: none;
+    	margin-left: 0px;
+    	padding-bottom: 23.2px;
+	}
+	
+	.contactInfo 
+	{
+    	margin-top: -150px;
+		margin-left: 0px;
+		margin-bottom: 100px;
+	}
+	
+	.contactText 
+	{
+    	padding-bottom: 25px;
+	}
+}
+
 /* ------------------------------ Smaller than Tablet Sized Responsiveness ----------- */
 @media (max-width: 767px)
 {
@@ -343,11 +465,45 @@ section
 
 @media (max-width: 426px)
 {
+	.connectTextSection 
+	{
+    	padding-top: 50px;
+	}
 	
+	.connectTag 
+	{
+    	width: 375px;   
+		margin-left: -90px;
+	}
+
+	.contactInfo 
+	{
+    	margin-top: -150px;
+    	margin-left: -45px;
+    	margin-bottom: 100px;
+	}
+	
+	#inquiresText
+	{
+    	margin-left: -50px;
+   		width: 300px;
+	}	
 }
 
 @media (max-width: 376px)
 {
+	.connectTag 
+	{
+    	width: 325px;
+    	margin-left: -90px;
+	}
+	
+	#inquiresText 
+	{
+    	margin-left: -75px;
+    	width: 300px;
+	}
+	
 	/*-------- Bottom Selects ----------- */
 	.bottom-selects 
 	{
@@ -357,6 +513,30 @@ section
 
 @media (max-width: 321px)
 {
+	.contactInfo 
+	{
+    	margin-top: -150px;
+    	margin-left: -65px;
+    	margin-bottom: 100px;
+	}
+	
+	.contactText li 
+	{
+    	width: 200px;
+	}
+	
+	.connectTag 
+	{
+    	width: 300px;
+    	margin-left: -100px;
+	}
+	
+	#inquiresText 
+	{
+   		margin-left: -80px;
+    	width: 250px;
+	}
+	
 	/* -------- Bottom Selects Section --------- */
 	.bottom-selects 
 	{
@@ -378,5 +558,25 @@ section
     	z-index: 10;
     	color: #444;
     	font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 751px) and (max-height: 426px) 
+{
+	
+	.connectTag 
+	{
+    	margin-left: -65px;
+    	margin-top: -150px;
+	}
+	
+	#inquiresText 
+	{
+    	margin-left: -80px;
+	}
+	
+	.bottom-selects
+	{
+    	left: 36%;
 	}
 }
