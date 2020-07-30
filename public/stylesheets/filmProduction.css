@@ -565,9 +565,9 @@ div.photoGallery
 	object-position: 20% -20px;
 }
 
-#lifestyleFeature
+#goodGirlsFeature
 {
-	object-position: 20% -6px;
+    object-position: 20% -88px;
 }
 
 /* -------------- Award & Certification Section ------------- */
@@ -849,9 +849,9 @@ a
 	{
 		object-position: 20% -20px;
 	}
-	#lifestyleFeature
+	#goodGirlsFeature
 	{
-		object-position: 42% -5px;
+    	object-position: 42% -97px;
 	}
 }
 
@@ -1131,9 +1131,9 @@ a
 	{
 		object-position: 20% 0px;
 	}
-	#lifestyleFeature
+	#goodGirlsFeature
 	{
-		object-position: 54% -5px;
+		object-position: 42% -35px;
 	}
 	
 	
@@ -1282,6 +1282,10 @@ a
 
 @media screen and (max-width: 767px) and (max-height: 426px) 
 {
+	#goodGirlsFeature
+	{
+    	object-position: 42% -90px;
+	}	
 	.bottom-selects
 	{
 		left: 36%;
@@ -1341,9 +1345,9 @@ a
 	{
 		object-position: 20% 0px;
 	}
-	#lifestyleFeature
+	#goodGirlsFeature
 	{
-		object-position: 54% -5px;
+		object-position: 54% -15px;
 	}
 	
 	/* ------- Featured Work Section ------- */

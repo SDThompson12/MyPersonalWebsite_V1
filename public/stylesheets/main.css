@@ -598,6 +598,18 @@ section
 	color: rgba(205,35,35,0.8);
 }
 
+#jSquaredTitle
+{
+	display: inline;
+}
+
+#jSquaredIG
+{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
 button 
 {
     cursor: pointer;
