@@ -204,7 +204,7 @@ section
 	margin-bottom: -15px;
 	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
-	padding-top: 20px;
+	padding-top: 35px;
 	letter-spacing: 1px;
 }
 
@@ -318,6 +318,7 @@ section
 
 .projectLinks 
 {
+	margin-bottom: 30px;
     margin-top: 10px;
     float: right;
 }
