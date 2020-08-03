@@ -22,17 +22,12 @@ header
 	transition: 0.6s;
 }
 
-header .logo
+header .logo 
 {
-	position: relative;
-	color: #ffffff;
-	height: 50px;
-	line-height: 50px;
-	font-size: 2em;
-	transition: 0.6s;
-	letter-spacing: 2px;
-	font-family: 'Teko', sans-serif;
-	text-shadow: 0 2px 5px rgba(255,0,0,2);
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
 }
 
 header ul
@@ -156,6 +151,17 @@ h1
 	font-size: 40px;
 	list-style: none;
 }
+
+img#personalLogo
+	{
+		width: 150px;
+	}
+img#mobileLogo
+	{
+		display: none;
+		width: 150px;
+	}
+	
 
 /* -------------------------------- Sections ------------------------------ */
 
@@ -621,6 +627,20 @@ a
 
 @media (max-width: 426px)
 {
+	/* ---------- Logos Sections ------------ */
+	img#personalLogo
+	{
+		width: 150px;
+		display: none;
+	}
+	
+	img#mobileLogo
+	{
+		display: block;
+		padding-top: 5px;
+   		width: 40px;
+	}
+	
 	#yelpcampInfo 
 	{
     	width: 320px;
@@ -766,8 +786,25 @@ a
 }
 
 /* ------------------------- For Mobile Horizontal Reponsiveness -------------------- */
-@media screen and (max-width: 825px) and (max-height: 425px) 
+@media screen and (max-width: 825px) and (max-height: 426px) 
 {
+	/* ---------- Logos Sections ------------ */
+	img#personalLogo
+	{
+		width: 150px;
+		display: none;
+	}
+	
+	img#mobileLogo
+	{
+		display: block;
+		padding-top: 5px;
+   		width: 40px;
+	}
+	
+/* ------------------------- For Mobile Horizontal Reponsiveness -------------------- */
+@media screen and (max-width: 825px) and (max-height:425px) 
+{		
 	.side-selects
 	{
     	width: 40px;
