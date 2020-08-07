@@ -246,7 +246,7 @@ section
 
 #introductionSection
 {
-	overflow: auto;
+	overflow: hidden;
 }
 
 .landing-text
@@ -311,6 +311,12 @@ section
     text-transform: uppercase;
     font-weight: 700;
 	color: #e6e6e6;
+}
+
+.portfolioPhoto
+{
+    width: 750px;
+    margin-left: -20px;
 }
 
 .y-center 
@@ -716,6 +722,39 @@ button
 	display: none;
 }
 
+@media (max-width: 1025px)
+{
+	.landing__header 
+	{
+    	font-weight: 800;
+    	font-size: 3em;
+    	margin-bottom: 10px;
+    	letter-spacing: 2px;
+    	bottom: -60px;
+    	text-shadow: none;
+	}
+	.landing__sub-header 
+	{
+    	font-family: 'Josefin Sans', sans-serif;
+    	letter-spacing: 4px;
+    	top: -10px;
+    	font-size: 3.5em;
+    	font-weight: 100;
+	}
+	.roles 
+	{
+   		font-family: 'Roboto', sans-serif;
+    	font-size: 15px;
+    	text-transform: uppercase;
+    	font-weight: 700;
+    	color: #e6e6e6;
+	}
+	.portfolioPhoto
+	{
+   		width: 700px;
+    	margin-left: -25px;
+	}
+}
 
 @media (max-width: 991px)
 {
@@ -788,7 +827,40 @@ button
 	}
 	
 	/* ----------------- Intro Section Responsive ------------- */
-
+	
+	.landing__header 
+	{
+    	font-weight: 800;
+    	font-size: 5em;
+    	margin-bottom: 10px;
+    	letter-spacing: 2px;
+    	bottom: -60px;
+    	text-shadow: none;
+	}
+	
+	.landing__sub-header 
+	{
+    	font-family: 'Josefin Sans', sans-serif;
+    	letter-spacing: 4px;
+    	top: -10px;
+    	font-size: 4.5em;
+    	font-weight: 100;
+	}
+	
+	.roles 
+	{
+    	font-family: 'Roboto', sans-serif;
+    	font-size: 19px;
+    	text-transform: uppercase;
+    	font-weight: 700;
+   		color: #e6e6e6;
+	}
+	
+	.portfolioPhoto
+	{
+		display: none;
+	}
+	
 	/* ----------------- About Section Responsive ------------- */
 
 	.infotext 
@@ -847,7 +919,6 @@ button
 /*--------------- Everything Under Standard Tablet Responsiveness -----------*/ 
 @media (max-width: 767px)
 {	
-	
 	
 	/* Intro Section ----------------- */
 	#introductionSection

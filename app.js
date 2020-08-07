@@ -19,7 +19,7 @@ app.use("/film_production", filmPortfolioRoute)
 app.use("/computer_science", compScienceRoute)
 app.use("/contact", contactRoute)
 
-app.listen(3152, function()
+app.listen(process.env.PORT, process.env.IP, function()
 {
     console.log("Starting My Personal Site server...");
 });

@@ -4,15 +4,16 @@
   "description": "My personal site for my own works, resume, proof of skill, and just a nice snippet into what I can do!",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "SeanDThompsonJr",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.6.1",
+    "ejs": "^3.1.3",
     "express": "^4.17.1",
-    "three": "^0.117.1",
+    "three": "^0.119.1",
     "three-orbitcontrols": "^2.110.3",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.11"
   }
 }
