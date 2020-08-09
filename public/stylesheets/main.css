@@ -758,7 +758,7 @@ button
 
 
 /* ------------ Larger than a LG Laptop --------------- */
-@media (min-width: 2000px)
+@media (min-width: 1550px)
 {
 	.quote 
 	{
