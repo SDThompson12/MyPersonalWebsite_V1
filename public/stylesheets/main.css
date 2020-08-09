@@ -756,6 +756,25 @@ button
 	}
 }
 
+
+/* ------------ Larger than a LG Laptop --------------- */
+@media (min-width: 2000px)
+{
+	.quote 
+	{
+    	margin-left: -150px;
+	}
+	
+	#smaller-section 
+	{
+    	font-size: 150px;
+	}
+	#zero 
+	{
+    	font-size: 520px;
+	}
+}
+
 @media (max-width: 991px)
 {
 	
