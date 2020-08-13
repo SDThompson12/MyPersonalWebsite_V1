@@ -313,10 +313,11 @@ section
 	color: #e6e6e6;
 }
 
-.portfolioPhoto
+.portfolioPhoto 
 {
-    width: 750px;
-    margin-left: -20px;
+    width: 450px;
+    margin-left: 10px;
+    margin-top: -75px;
 }
 
 .y-center 
@@ -749,10 +750,10 @@ button
     	font-weight: 700;
     	color: #e6e6e6;
 	}
-	.portfolioPhoto
+	.portfolioPhoto 
 	{
-   		width: 700px;
-    	margin-left: -25px;
+    	width: 400px;
+    	margin-left: 0;
 	}
 }
 
