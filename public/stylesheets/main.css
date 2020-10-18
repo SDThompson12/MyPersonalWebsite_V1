@@ -972,7 +972,7 @@ button
     	margin: 0 auto;
     	z-index: 10;
     	color: #444;
-    	font-size: 25px;
+    	font-size: 46px;
     	left: 55%;
 	}
 	
@@ -1128,7 +1128,7 @@ button
 	/* -------- Bottom Selects -------- */
 	.bottom-selects
 	{
-		left: 65%;
+		left: 45%;
 	}
 	
 }
@@ -1164,7 +1164,7 @@ button
 	/* -------- Bottom Selects -------- */
 	.bottom-selects
 	{
-		left: 80%;
+		left: 50%;
 	}
 }
 
@@ -1228,7 +1228,7 @@ button
 	}
 	.bottom-selects
 	{
-		left: 80%;
+		left: 50%;
 	}
 }
 
