@@ -1243,6 +1243,15 @@ button
 	{
     	height: 1325px;
 	}
+	.bottom-selects
+	{
+		left: 46%;
+    	font-size: 46px;
+	}
+	.professional_Links li 
+	{
+    	padding-left: 45px;
+	}
 }
 
 /* ------------------------- For Mobile Horizontal Reponsiveness -------------------- */
