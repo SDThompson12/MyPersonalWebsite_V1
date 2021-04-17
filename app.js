@@ -22,7 +22,7 @@ app.use("/contact", contactRoute)
 //For Local Port Functions and testing Website Changes: app.listen(3152, function()
 //For Deployment Application running: app.listen(process.env.PORT, process.env.IP, function()
 
-app.listen(3152, function()
+app.listen(process.env.PORT, process.env.IP, function()
 {
     console.log("Starting My Personal Site server...");
 });
