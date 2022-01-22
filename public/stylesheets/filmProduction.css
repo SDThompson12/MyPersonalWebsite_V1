@@ -303,6 +303,13 @@ button
     padding: 25px 0px 25px 24px;
 }
 
+/* ------- Film Reel Video --------- */
+#currentFilmReel
+{
+	margin-left: 75px;
+    padding: 25px 0px 25px 24px;
+}
+
 /* ------Film Direction Features------ */
 
 
@@ -518,6 +525,7 @@ div.photoGallery
     width: 425px;
     float: right;
 }
+
 
 /* ------- Feature Images ---------- */
 #antigoneFeature
@@ -933,6 +941,12 @@ a
 	{
     	margin-left: -70px;
 	}
+
+	/* ------- Film Reel Video --------- */
+	#currentFilmReel
+	{
+		margin-left: -70px;
+	}
 }
 
 /* ------------------------------ Smaller than Tablet Sized Responsiveness ----------- */
@@ -1100,7 +1114,14 @@ a
 	{
     	margin-left: -135px;
     	width: 320px;
-	}	
+	}
+	
+	/* ------- Film Reel Video --------- */
+	#currentFilmReel
+	{
+		margin-left: -135px;
+		width: 320px;
+	}
 	
 	iframe
 	{
@@ -1242,6 +1263,13 @@ a
 	{
     	margin-left: -20px;
     	width: 320px;
+	}
+	
+	/* ------- Film Reel Video --------- */
+	#currentFilmReel
+	{
+		margin-left: -20px;
+		width: 320px;
 	}
 	
 	.filmWorkTabs 

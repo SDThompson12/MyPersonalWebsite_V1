@@ -62,46 +62,61 @@
 					<div class="tab col-md-3 col-sm-12">
 						<ul role="tablist" aria-label="FilmWork tabs" class="filmWorkTabs">
 							<li class='active'>
-								<a data-toggle="tab" href="#filmWork1"class="filmWorkButton" onclick="viewFilmWork(event,'filmWork1')">
+								<a data-toggle="tab" href="#filmwork1"class="filmWorkButton" onclick="viewFilmWork(event,'filmwork1')">
+									<span>2021 Film Reel</span>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#filmwork2"class="filmWorkButton" onclick="viewFilmWork(event,'filmwork2')">
 									<span>Film Direction</span>
 								</a>
 							</li>
 							<li>
-								<a data-toggle="tab" href="#filmWork2"class="filmWorkButton" onclick="viewFilmWork(event,'filmWork2')">
+								<a data-toggle="tab" href="#filmwork3"class="filmWorkButton" onclick="viewFilmWork(event,'filmwork3')">
 									<span>Aerial Videography</span>
 								</a>
 							</li>
 							<li>
-								<a data-toggle="tab" href="#filmWork3"class="filmWorkButton" onclick="viewFilmWork(event,'filmWork3')">
+								<a data-toggle="tab" href="#filmwork4"class="filmWorkButton" onclick="viewFilmWork(event,'filmwork4')">
 									<span>3D Modeling</span>
 								</a>
 							</li>
 							<li>
-								<a data-toggle="tab" href="#filmWork4"class="filmWorkButton" onclick="viewFilmWork(event,'filmWork4')">
+								<a data-toggle="tab" href="#filmwork5"class="filmWorkButton" onclick="viewFilmWork(event,'filmwork5')">
 									<span>Photography</span>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div id='filmWorkDetails' class='col-md-9 col-sm-12'>
- 						<div id="filmWork1" class="tab-content active" style="display: block;">
+						<div id="filmwork1" class="tab-content active" style="display: block;">
+							<div class="animated animatedFadeInUp fadeInUp">
+								<div class='filmWorkFeatures'>
+									<div id='currentFilmReel' style='display: block;'>
+										<iframe width="560" height="315" src="https://player.vimeo.com/video/657102747?h=2c8993e2f6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; gyroscope; clipboard-write; picture-in-picture" title="Sean Thompson - 2021 Film Reel"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+ 						<div id="filmwork2" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
 									
 									<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
 									<ul class="directionFeatures feature-tab-content active animated animatedFadeInUp fadeInUp" id="filmDirectionList1" style="display: block;" >
 										<li>
-											<a href="#" class="feature" onclick="viewFeature(event,'yelloPainVideo','filmWork1')">
+											<a href="#" class="feature" onclick="viewFeature(event,'yelloPainVideo','filmwork2')">
 												<img class="featurePhoto" id="yelloPainFeature" src="/images/filmfeature/YelloPainFeature.png">
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'goodGirlsVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'goodGirlsVideo','filmwork2')">
 												<img class='featurePhoto' id='goodGirlsFeature' src='/images/filmfeature/GoodGirlsFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'buildABooVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'buildABooVideo','filmwork2')">
 												<img class='featurePhoto' id='buildabooFeature' src='/images/filmfeature/Build-A-BooFeature.png' />
 											</a>
 										</li>			
@@ -110,17 +125,17 @@
 									<!-- ------------- The Features List that is Shown: Tab 2 -------- -->
 									<ul class="directionFeatures feature-tab-content animated animatedFadeInUp fadeInUp" id="filmDirectionList2" style="display: none;" >
 										<li>
-											<a href="#" class="feature" onclick="viewFeature(event,'lostInTimeVideo','filmWork1')">
+											<a href="#" class="feature" onclick="viewFeature(event,'lostInTimeVideo','filmwork2')">
 												<img class="featurePhoto" id="lostInTimeFeature" src="/images/filmfeature/LostInTimeFeature.png">
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'nuski2SquadVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'nuski2SquadVideo','filmwork2')">
 												<img class='featurePhoto' id='nuski2SquadFeature' src='/images/filmfeature/Nuski2SquadFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'antigoneVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'antigoneVideo','filmwork2')">
 												<img class='featurePhoto' id='antigoneFeature' src='/images/filmfeature/AntigoneFeature.png' />
 											</a>
 										</li>
@@ -129,12 +144,12 @@
 									
 									<ul class="directionFeatures feature-tab-content animated animatedFadeInUp fadeInUp" id="filmDirectionList3" style="display: none;" >
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'urbanRecipeVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'urbanRecipeVideo','filmwork2')">
 												<img class='featurePhoto' id='urbanrecipeFeature' src='/images/filmfeature/UrbanRecipeFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'plushieVideo','filmWork1')">
+											<a href='#' class='feature' onclick="viewFeature(event,'plushieVideo','filmwork2')">
 												<img class='featurePhoto' id='plushieFeature' src='/images/filmfeature/ThePlushieFeature.png' />
 											</a>
 										</li>
@@ -167,7 +182,7 @@
 										</ul>	
 								</div>
 							</div>		
-					</div>
+						</div>
 						
 						<!-- ----------- Film Work Videos ------------ -->
 						<!-- --Page 1-- -->	
@@ -180,7 +195,7 @@
 						</div> 
 						
 						<div id='buildABooVideo' class='featuredVideo animated animatedFadeInUp fadeInUp' style='display: none;'>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/nTeWlC2edzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/3cqZNj6hPpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						
 						<!-- --Page 2-- -->
@@ -209,18 +224,18 @@
 						</div>
 						
 						
- 						<div id="filmWork2" class="tab-content" style="display: none;">
+ 						<div id="filmwork3" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
 										<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
 									<ul class="aerialFeatures aerialfeature-tab-content active animated animatedFadeInUp fadeInUp" id="aerialList1" style="display: block;" >
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'piedmontParkVideo','filmWork2')">
+											<a href='#' class='feature' onclick="viewFeature(event,'piedmontParkVideo','filmwork3')">
 												<img class='featurePhoto' id='piedmontFeature' src='/images/filmfeature/PiedmontParkFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'eliteScholarsVideo','filmWork2')">
+											<a href='#' class='feature' onclick="viewFeature(event,'eliteScholarsVideo','filmwork3')">
 												<img class='featurePhoto' id='eliteFeature' src='/images/filmfeature/EliteScholarsFeature.png' />
 											</a>
 										</li>			
@@ -243,7 +258,7 @@
 									</ul>	
 								</div>
 							</div>
-					</div>
+						</div>
 						
 						<!-- ----------- Aerial Videography Videos ------------ -->
 						<!-- --Page 1-- -->
@@ -255,18 +270,18 @@
 							<iframe src="https://player.vimeo.com/video/429428900" id='eliteScholarsIFrame' width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 						</div>
 						
-						<div id="filmWork3" class="tab-content" style="display: none;">
+						<div id="filmwork4" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
 											<!-- ---------- The Features List that is Shown: Tab 1 -------- -->
 									<ul class="modelingFeatures modelingfeature-tab-content active" id="modelingList1" style="display: block;" >
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'pottedPlanterModel','filmWork3')">
+											<a href='#' class='feature' onclick="viewFeature(event,'pottedPlanterModel','filmwork4')">
 												<img class='featurePhoto' id='pottedplanterFeature' src='/images/filmfeature/ThePottedPlanterFeature.png' />
 											</a>
 										</li>
 										<li>
-											<a href='#' class='feature' onclick="viewFeature(event,'livingRoomModel','filmWork3')">
+											<a href='#' class='feature' onclick="viewFeature(event,'livingRoomModel','filmwork4')">
 												<img class='featurePhoto' id='livingroomFeature' src='/images/filmfeature/LivingRoomFireplaceFeature.png' />
 											</a>
 										</li>			
@@ -289,7 +304,7 @@
 										</ul>
 								</div>
 							</div>
-					</div>
+						</div>
 						
 						<!-- ----------- 3D Model Viewing ------------ -->
 						
@@ -315,10 +330,10 @@
 								</div>
 						</div>
 
-						<div id="filmWork4" class="tab-content" style="display: none;">
+						<div id="filmwork5" class="tab-content" style="display: none;">
 							<div class="animated animatedFadeInUp fadeInUp">
 								<div class='filmWorkFeatures'>
-									<a href='#' class='feature' onclick="viewFeature(event,'photoGallery1','filmWork4')">
+									<a href='#' class='feature' onclick="viewFeature(event,'photoGallery1','filmwork5')">
 										<img class='featurePhoto' id='cozumelFeature' src='/images/filmfeature/CozumelOceanFeature.png' />
 									</a>	
 								</div>
@@ -357,7 +372,7 @@
 								</div><!-- /.carousel -->
 							</div>
 							
-					</div>
+						</div>
 					</div>
 						
 		</div>

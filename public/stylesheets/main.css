@@ -568,6 +568,11 @@ section
 	color: #FFFFFF;
 }
 
+.tab-content a 
+{
+    font-size: .7em;
+}
+
 .experienceNotes
 {
 	font-family: 'Roboto', sans-serif;
