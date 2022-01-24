@@ -29,7 +29,13 @@
 						</ul>
 					</li>
 					<li><a href="/contact">Contact</a></li>
-					<li><a href="/resume/SeanJrResume2020.pdf" download>Resume</a></li>
+						<li class="sub-menu"><a href="#">Resume</a>
+						<ul>
+							<li><a href="/resume/SeanThompsonJr_CSResume.pdf" download>CS Resume</a></li>
+							<li><a href="/resume/SeanJr_FilmResume2021.pdf" download>Film Resume</a></li>
+							<li><a href="/resume/SeanJrResume2021.pdf" download>General Resume</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -50,27 +56,24 @@
 			</div>
 	
 <div class='container'>
-	
-	<section>
 		<h3 id='featuredProjectTitle'>
 			Featured Projects
 		</h3>
+		<!--  ------ Mailchimp ------- -->
+		<section>
 		<div class="row">
-			<div class="col-md-4 featuredProjectInfo" id='yelpcampInfo'>
-				<h3><b>YelpCamp</b></h3>
+			<div class="col-md-4 featuredProjectInfo" id='mailchimpInfo'>
+				<h3><b>Mailchimp: On-The-Go Marketing</b></h3>
 				<hr>
-				<h6>March, 2019</h6>
+				<h6>November, 2021</h6>
 				<h5>Technologies</h5>
-				<p>Bootstrap 3 <span class="technologyBreak"> | </span> NodeJS <span class="technologyBreak"> | </span> Express <span class="technologyBreak"> | </span> Mongoose <span class="technologyBreak"> | </span> jQuery <span class="technologyBreak"> | </span> Passport </p>
+				<p> Javascript <span class="technologyBreak"> | </span> Bootstrap 3 <span class="technologyBreak"> | </span> NodeJS <span class="technologyBreak"> | </span> ExpressJS </p> 
 				<h5>Overview</h5>
-					<p>Mockup website of a campsite review system using Mongoose and Express to practice authenication, dynamic database changes, and 	understanding the usages of RESTful Routing techniques.
-					</p>
-				<h5>Reflection</h5> 
-					<p> This project was made to combine all of my studies in JavaScript, database management, authenication, and RESTful Routing into a complete website. If I ever return to this project, I would like to update the look and feel of the website, and have more editable and personalized components to the profile/user experience. This website still functions and is hosted by Heroku, but with outdated dependencies.</p>
+					<p>Mock-up website for Mailchimp's mobile application that utilizes modern web development techonologies and designed to fit the look and feel of Mailchimp's website. Utilizes the company's in-house font, color schemes, linking, and logo to seemlessly appear as another website within Mailchimp's domain.</p>
 			</div>
-			<div class="col-md-8 col-md featuredProjectCarousel">
+			<div class="col-md-8 featuredProjectCarousel">
 				<!--Carousel-->
-					<div class="browser">
+					<div class="browser" id='mailchimpBrowser'>
 						<div class="bar">
 							<div class="gui">
 								<div class="circle"></div>
@@ -78,172 +81,235 @@
 								<div class="circle"></div>
 							</div>
 						</div>
-						<div id="yelpcampCarousel" class="carousel slide" data-ride="carousel">
+						<div id="mailchimpCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
-					<li data-target="#yelpcampCarousel" data-slide-to="0" class=""></li>
-					<li data-target="#yelpcampCarousel" data-slide-to="1" class=""></li>
-					<li data-target="#yelpcampCarousel" data-slide-to="2" class="active"></li>
-					<li data-target="#yelpcampCarousel" data-slide-to="3" class=""></li>
+					<li data-target="#mailchimpCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mailchimpCarousel" data-slide-to="1" class=""></li>
+					<li data-target="#mailchimpCarousel" data-slide-to="2" class=""></li>
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="item">
-						<img class="first-slide" src="images/yelpcamp/Yelpcamp-1.jpg" alt="First slide">
+						<img class="first-slide" src="images/mailchimp/MailchimpMarketingSite-1.png" alt="First slide">
 					 		</div>
 						<div class="item">
-						<img class="second-slide" src="images/yelpcamp/Yelpcamp-2.jpg" alt="Second slide">
+						<img class="second-slide" src="images/mailchimp/MailchimpMarketingSite-2.png" alt="Second slide">
 					</div>
 					<div class="item active">
-						<img class="third-slide" src="images/yelpcamp/Yelpcamp-3.jpg" alt="Third slide">
-					</div>
-					<div class="item">
-						<img class="fourth-slide" src="images/yelpcamp/Yelpcamp-4.png" alt="Fourth slide">
+						<img class="third-slide" src="images/mailchimp/MailchimpMarketingSite-3.png" alt="Third slide">
 					</div>
 					</div>
-					<a class="left carousel-control" href="#yelpcampCarousel" role="button" data-slide="prev">
+					<a class="left carousel-control" href="#mailchimpCarousel" role="button" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
 					</a>
-					<a class="right carousel-control" href="#yelpcampCarousel" role="button" data-slide="next">
+					<a class="right carousel-control" href="#mailchimpCarousel" role="button" data-slide="next">
 					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 					</a>
+					</div><!-- /.carousel -->
+					</div>
+					<div class='projectLinks'>
+						<a href='http://sdt-mailchimpmarketing.herokuapp.com/' target="_blank"><button id='viewProjectBtn' class='btn btn-primary'> View Project </button></a>
+						<a href='https://github.com/SDThompson12/MailchimpMarketingWebsite' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
+					</div>
+			</div>
+			
+		</div>	
+		</section>
+		<!--  ------ Android Studio  ------- -->
+		<section>
+			<div class="row">
+				<div class="col-md-8 featuredProjectCarousel">
+						<!--Carousel-->
+							<div class="browser" id='projectBMBrowser'>
+								<div class="bar">
+									<div class="gui">
+										<div class="circle"></div>
+										<div class="circle"></div>
+										<div class="circle"></div>
+									</div>
+								</div>
+							<div id="projectBMCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+							<li data-target="#projectBMCarousel" data-slide-to="0" class=""></li>
+							<li data-target="#projectBMCarousel" data-slide-to="1" class=""></li>
+							<li data-target="#projectBMCarousel" data-slide-to="2" class="active"></li>
+							<li data-target="#projectBMCarousel" data-slide-to="3" class=""></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item">
+									<img class="first-slide" src="images/androidStudio/AndroidStudio-1.png" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="images/androidStudio/AndroidStudio-2.png" alt="Second slide">
+								</div>
+								<div class="item active">
+									<img class="third-slide" src="images/androidStudio/AndroidStudio-3.png" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="images/androidStudio/AndroidStudio-4.png" alt="Fourth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#projectBMCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#projectBMCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div><!-- /.carousel -->
-					</div>
-					<div class='projectLinks'>
-						<a href='https://yelpcamp-sdt.herokuapp.com/' target="_blank"><button id='viewProjectBtn' class='btn btn-primary'> View Project </button></a>
-						<a href='https://github.com/SDThompson12/YelpCamp_V1' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
-					</div>
-			</div>
-		</div>	
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-md-8 featuredProjectCarousel">
-				<!--Carousel-->
-					<div class="browser" id='colorPickerBrowser'>
-						<div class="bar">
-							<div class="gui">
-								<div class="circle"></div>
-								<div class="circle"></div>
-								<div class="circle"></div>
 							</div>
+						<div class='projectLinks'>
+							<a href='https://github.com/SDThompson12/ProjectBlackMirror_V2' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
 						</div>
-						<div id="colorPickerCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-					<li data-target="#colorPickerCarousel" data-slide-to="0" class=""></li>
-					<li data-target="#colorPickerCarousel" data-slide-to="1" class=""></li>
-					<li data-target="#colorPickerCarousel" data-slide-to="2" class="active"></li>
-					<li data-target="#colorPickerCarousel" data-slide-to="3" class=""></li>
-					</ol>
-					<div class="carousel-inner" role="listbox">
-						<div class="item">
-						<img class="first-slide" src="images/colorpicker/ColorPicker-1.png" alt="First slide">
-					 		</div>
-						<div class="item">
-						<img class="second-slide" src="images/colorpicker/ColorPicker-2.png" alt="Second slide">
-					</div>
-					<div class="item active">
-						<img class="third-slide" src="images/colorpicker/ColorPicker-3.png" alt="Third slide">
-					</div>
-					<div class="item">
-						<img class="fourth-slide" src="images/colorpicker/ColorPicker-4.png" alt="Fourth slide">
-					</div>
-					</div>
-					<a class="left carousel-control" href="#colorPickerCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#colorPickerCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-					</a>
-					</div><!-- /.carousel -->
-					</div>
-					<div class='projectLinks'>
-						<a href='https://sdt-color-picker-game.herokuapp.com/' target="_blank"><button id='viewProjectBtn' class='btn btn-primary'> View Project </button></a>
-						<a href='https://github.com/SDThompson12/ColorPickerGame' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
-					</div>
+				</div>
+				<div class="col-md-4 featuredProjectInfo2" id='projectBMInfo'>
+					<h3><b>Project: Black Mirror V2</b></h3>
+					<hr>
+					<h6>November, 2021</h6>
+					<h5>Technologies / Packages</h5>
+					<p> Java <span class="technologyBreak"> | </span> Android Studio <span class="technologyBreak"> | </span> Gradle </p>
+					<h5>Overview</h5>
+						<p>This project was a recreation of a previous project from a web app into a mobile applicaiton. A mock-up concept for a web/phone application that connects people's many different IoT devices and allows a user to control the IOTs in differents rooms all in one app.</p>
+				</div>
 			</div>
-			<div class="col-md-4 featuredProjectInfo" id='colorPickerInfo'>
-				<h3><b>Color Picker Game</b></h3>
-				<hr>
-				<h6>August, 2018</h6>
-				<h5>Technologies</h5>
-				<p> Javascript <span class="technologyBreak"> | </span> Bootstrap 3 </p>
-				<h5>Overview</h5>
-					<p>Uses pure Javascript and Bootstrap to change multiple tags with onclick Event Listeners and compare choices to the correct answer.</p>
-				<h5>Reflection</h5> 
-					<p>This project was really enjoyable as a starting point in learning JavaScript and helped immensely in understanding writing math, random number generation, and comparing data with JS. If I were to revisit this project, I would like to add more pure javascript games to the webpage and have a homepage as a hub to transition back and forth between different types of JavaScript games. This application has recently been updated to be deployed via Heroku, so please try out this small game.</p>
-			</div>
-		</div>	
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-md-4 featuredProjectInfo" id='colorPickerInfo'>
-				<h3><b>Employee Database Mock-up System</b></h3>
-				<hr>
-				<h6>May, 2016</h6>
-				<h5>Technologies / Packages</h5>
-				<p> Java <span class="technologyBreak"> | </span> Java.io.* <span class="technologyBreak"> | </span> Java.util.Scanner </p>
-				<h5>Overview</h5>
-					<p>This project was done as a mock-up of an employee database to keep track of employees' personal data and salary/hourly rates and to understand Text Processing. I used solely Java packages to create classes for both the companies and the employees and extended the necessary subclasses for each. After all the employee's information has been submitted, it is then pushed into a printable text file.</p>
-				<h5>Reflection</h5> 
-					<p>This application was a massive undertaking to create however if I were to revisit this project, I would love to create an GUI for each input section or convert the code for a mobile application. Overall, this project worked out really well by strengthing my understanding the relationship between super and subclasses, as well as, text processing using java.</p>
-			</div>
-			<div class="col-md-8 featuredProjectCarousel">
-				<!--Carousel-->
-					<div class="browser" id='employeeBrowser'>
-						<div class="bar">
-							<div class="gui">
-								<div class="circle"></div>
-								<div class="circle"></div>
-								<div class="circle"></div>
+		</section>
+		<!--  ------ YelpCamp ------- -->
+		<section>
+			<div class="row">
+				<div class="col-md-4 featuredProjectInfo" id='yelpcampInfo'>
+					<h3><b>YelpCamp</b></h3>
+					<hr>
+					<h6>March, 2019</h6>
+					<h5>Technologies</h5>
+					<p>Bootstrap 3 <span class="technologyBreak"> | </span> NodeJS <span class="technologyBreak"> | </span> Express <span class="technologyBreak"> | </span> Mongoose <span class="technologyBreak"> | </span> jQuery <span class="technologyBreak"> | </span> Passport </p>
+					<h5>Overview</h5>
+						<p>Mockup website of a campsite review system using Mongoose and Express to practice authenication, dynamic database changes, and 	understanding the usages of RESTful Routing techniques.
+						</p>
+					<!-- 
+					<h5>Reflection</h5> 
+						<p> This project was made to combine all of my studies in JavaScript, database management, authenication, and RESTful Routing into a complete website. If I ever return to this project, I would like to update the look and feel of the website, and have more editable and personalized components to the profile/user experience. This website still functions and is hosted by Heroku, but with outdated dependencies.</p>
+					-->
+				</div>
+				<div class="col-md-8 col-md featuredProjectCarousel">
+					<!--Carousel-->
+						<div class="browser">
+							<div class="bar">
+								<div class="gui">
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
 							</div>
-						</div>
-						<div id="employeeCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-					<li data-target="#employeeCarousel" data-slide-to="0" class=""></li>
-					<li data-target="#employeeCarousel" data-slide-to="1" class=""></li>
-					<li data-target="#employeeCarousel" data-slide-to="2" class="active"></li>
-					<li data-target="#employeeCarousel" data-slide-to="3" class=""></li>
-							<li data-target="#employeeCarousel" data-slide-to="4" class=""></li>
-					</ol>
-					<div class="carousel-inner" role="listbox">
-						<div class="item">
-						<img class="first-slide" src="images/employee/EmployeeCode-Code1.png" alt="First slide">
-					 		</div>
-						<div class="item">
-						<img class="second-slide" src="images/employee/EmployeeCode-Code2.png" alt="Second slide">
-					</div>
-					<div class="item active">
-						<img class="third-slide" src="images/employee/EmployeeCode-CMD1.png" alt="Third slide">
-					</div>
-					<div class="item">
-						<img class="fourth-slide" src="images/employee/EmployeeCode-CMD2.png" alt="Fourth slide">
-					</div>
+							<div id="yelpcampCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+						<li data-target="#yelpcampCarousel" data-slide-to="0" class=""></li>
+						<li data-target="#yelpcampCarousel" data-slide-to="1" class=""></li>
+						<li data-target="#yelpcampCarousel" data-slide-to="2" class="active"></li>
+						<li data-target="#yelpcampCarousel" data-slide-to="3" class=""></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
 							<div class="item">
-						<img class="fifth-slide" src="images/employee/EmployeeCode-CMD3.png" alt="Fifth slide">
-					</div>
-					</div>
-					<a class="left carousel-control" href="#employeeCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#employeeCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-					</a>
-					</div><!-- /.carousel -->
-					</div>
-					<div class='projectLinks'>
-						<a href='https://github.com/SDThompson12/Employee-Database-Mockup' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
-					</div>
+							<img class="first-slide" src="images/yelpcamp/Yelpcamp-1.jpg" alt="First slide">
+								</div>
+							<div class="item">
+							<img class="second-slide" src="images/yelpcamp/Yelpcamp-2.jpg" alt="Second slide">
+						</div>
+						<div class="item active">
+							<img class="third-slide" src="images/yelpcamp/Yelpcamp-3.jpg" alt="Third slide">
+						</div>
+						<div class="item">
+							<img class="fourth-slide" src="images/yelpcamp/Yelpcamp-4.png" alt="Fourth slide">
+						</div>
+						</div>
+						<a class="left carousel-control" href="#yelpcampCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#yelpcampCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+						</a>
+							</div><!-- /.carousel -->
+						</div>
+						<div class='projectLinks'>
+							<a href='https://yelpcamp-sdt.herokuapp.com/' target="_blank"><button id='viewProjectBtn' class='btn btn-primary'> View Project </button></a>
+							<a href='https://github.com/SDThompson12/YelpCamp_V1' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
+						</div>
+				</div>	
+			</div>	
+		</section>
+		
+		<!-- -------Employee Database System------- -->
+		<section>
+			<div class="row">
+				<div class="col-md-8 featuredProjectCarousel">
+						<!--Carousel-->
+							<div class="browser" id='employeeBrowser'>
+								<div class="bar">
+									<div class="gui">
+										<div class="circle"></div>
+										<div class="circle"></div>
+										<div class="circle"></div>
+									</div>
+								</div>
+							<div id="employeeCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+							<li data-target="#employeeCarousel" data-slide-to="0" class=""></li>
+							<li data-target="#employeeCarousel" data-slide-to="1" class=""></li>
+							<li data-target="#employeeCarousel" data-slide-to="2" class="active"></li>
+							<li data-target="#employeeCarousel" data-slide-to="3" class=""></li>
+							<li data-target="#employeeCarousel" data-slide-to="4" class=""></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item">
+									<img class="first-slide" src="images/employee/EmployeeCode-Code1.png" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="images/employee/EmployeeCode-Code2.png" alt="Second slide">
+								</div>
+								<div class="item active">
+									<img class="third-slide" src="images/employee/EmployeeCode-CMD1.png" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="images/employee/EmployeeCode-CMD2.png" alt="Fourth slide">
+								</div>
+								<div class="item">
+									<img class="fifth-slide" src="images/employee/EmployeeCode-CMD3.png" alt="Fifth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#employeeCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#employeeCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div><!-- /.carousel -->
+							</div>
+						<div class='projectLinks'>
+							<a href='https://github.com/SDThompson12/Employee-Database-Mockup' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
+						</div>
+				</div>
+				<div class="col-md-4 featuredProjectInfo2" id='employeeDBInfo'>
+					<h3><b>Employee Database Mock-up System</b></h3>
+					<hr>
+					<h6>May, 2016</h6>
+					<h5>Technologies / Packages</h5>
+					<p> Java <span class="technologyBreak"> | </span> Java.io.* <span class="technologyBreak"> | </span> Java.util.Scanner </p>
+					<h5>Overview</h5>
+						<p>This project was done as a mock-up of an employee database to keep track of employees' personal data and salary/hourly rates and to understand Text Processing. I used solely Java packages to create classes for both the companies and the employees and extended the necessary subclasses for each. After all the employee's information has been submitted, it is then pushed into a printable text file.</p>
+				</div>
 			</div>
-		</div>	
-	</section>
+		</section>
+		
+	<!-- ---------- Previous Projects Section ------------------- -->
 	<section id='previousProjects'>
 		<h3 id='previousProjectTitle'>
 			Previous Projects
@@ -292,22 +358,22 @@
 		</div>
 		<div class="previousProject-container">
 			<div class="projectImage">
-				<img class='previousProjectImage' id="scoreKeeperProject" src="/images/previousProjects/ScoreKeeper.png">
+				<img class='previousProjectImage' id="scoreKeeperProject" src="/images/colorpicker/ColorPicker-1.png">
 			</div>
 			<h3>
-				Score Keeper App
+				<a href="https://sdt-color-picker-game.herokuapp.com/" style="color: #FFFFFF;">Color Picker App</a>
 			</h3>
 			<div class="projectDescription">
 				<p>
-					A mini-web application used for learning basic Javascript logic with little CSS, by keeping scored of two players until a winning score causes the app to reset.
+					Uses pure Javascript and Bootstrap to change multiple tags with onclick Event Listeners and compare choices to the correct answer. Click the title to play the game!
 				</p>
 			</div>
 			<footer>
 				<div class="previousProject-technogies">
-				 <p> Javascript </p>
+				 <p> Javascript <span class="technologyBreak"> | </span> Bootstrap 3 </p>
 				</div>
-				<div class="githubCardLink" id='scoreKeeperGit'>
-					<a href='https://github.com/SDThompson12/ScoreKeeper_V1' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
+				<div class="githubCardLink" id='colorPickerGit'>
+					<a href='https://github.com/SDThompson12/ColorPickerGame' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
 				</div>
 			</footer>
 		</div>
@@ -334,22 +400,22 @@
 		</div>
 		<div class="previousProject-container">
 			<div class="projectImage">
-				<img class='previousProjectImage' id="photoGridProject" src="/images/previousProjects/PhotoGrid.png">
+				<img class='previousProjectImage' id="photoGridProject" src="/images/previousProjects/PatchNotes-1.png">
 			</div>
 			<h3>
-				Photo Grid
+				Gaming RSS Feed
 			</h3>
 			<div class="projectDescription">
 				<p>
-					A mock photo gallery to help understand Bootstrap 3, Responsive CSS, and usages of the Box Model when designing a webpage.
+					This is an RSS feed that gives up-to-date news on gaming news while giving the user the ability to add or remove any gaming feed.
 				</p>
 			</div>
 			<footer>
 				<div class="previousProject-technogies">
-				 	<p> Bootstrap 3 </p>
+				 	<p> Javascript <span class="technologyBreak"> | </span> JSON <span class="technologyBreak"> | </span> Bootstrap 3 </p>
 				</div>
-				<div class="githubCardLink" id='photoGridGit'>
-					<a href='https://github.com/SDThompson12/PhotoGrid' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
+				<div class="githubCardLink" id='patchNotesGit'>
+					<a href='https://github.com/SDThompson12/ThePatchNotes' target="_blank" arial-label='Github'><i class="fab fa-github"></i></a>
 				</div>
 			</footer>
 		</div>

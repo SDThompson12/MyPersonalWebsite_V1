@@ -341,6 +341,10 @@ button
 	{
 		object-position: 20% -228px;
 	} 
+	#tafSportsFeature
+	{
+		width: 582px;
+	} 
 }
 
 @supports (-ms-accelerator:true) 
@@ -369,6 +373,10 @@ button
 	#cozumelFeature
 	{
 		object-position: 20% -228px;
+	}
+	#tafSportsFeature
+	{
+		width: 582px;
 	} 
 }
 
@@ -397,6 +405,10 @@ button
 	#cozumelFeature
 	{
 		object-position: 20% -228px;
+	}
+	#tafSportsFeature
+	{
+		width: 582px;
 	} 
 }
 
@@ -534,7 +546,7 @@ div.photoGallery
 }
 #buildabooFeature
 {
-	object-position: 20% -28px;
+	object-position: 20% -40px;
 }
 #piedmontFeature
 {
@@ -581,6 +593,12 @@ div.photoGallery
 #goodGirlsFeature
 {
     object-position: 20% -93px;
+}
+
+/* ---------- TAF Sports Carousel ------------ */ 
+#tafSportsCarousel
+{
+    width: 530px;
 }
 
 /* -------------- Award & Certification Section ------------- */
@@ -824,7 +842,7 @@ a
 	}
 	#buildabooFeature
 	{
-		object-position: 20% -25px;
+		object-position: 20% -45px;
 	}
 	#piedmontFeature
 	{
@@ -1044,6 +1062,20 @@ a
     	margin-left: 140px;
 	}
 	
+	/* -------- TAF Sports Feature ------- */
+	
+	#tafSportsCarousel 
+	{
+    	margin-left: 40px;
+    	margin-right: -40px;
+	}
+	
+	#tafSportsFeature
+	{
+		margin-left: 40px;
+    	width: 635px;
+	} 
+	
 	/* ------- Cozumel Feature --------- */
 	#cozumelFeature 
 	{
@@ -1186,6 +1218,12 @@ a
     	width: 400px;
 	}
 	
+	#tafSportsFeature 
+	{
+		margin-left: 45px;
+    	width: 400px;
+	}
+	
 	#pottedPlanterModel 
 	{
     	margin-left: -70px;
@@ -1218,6 +1256,15 @@ a
 	{
 		margin-right: 25px;
 		left: 120px;
+	}
+	
+	/* ------ TAF Sports Photo Section ----- */
+	
+	#tafSportsCarousel 
+	{
+		margin-right: 25px;
+		left: 85px;
+		width: 100%;
 	}
 	
 	/* ------ Bottom Selects ------- */
@@ -1316,10 +1363,21 @@ a
 		margin-left: 12px;
 	}
 	
-		/* ------ Cozumel Photo Section ----- */
+	/* ------ TAF Sports Feature ---- */
+	#tafSportsFeature 
+	{
+    	margin-left: 12px;
+	}
+	
+	/* ------ Cozumel Photo Section ----- */
 	.browser
 	{
 		width: 345px;	
+	}
+	
+	#tafSportsCarousel 
+	{
+		margin-right: 25px;
 	}
 	
 	#cozumelCarousel 
@@ -1373,6 +1431,11 @@ a
 
 @media screen and (max-width: 321px) and (max-height: 813px)
 {
+	#tafSportsCarousel
+	{
+    	margin-right: -30px !important; 
+    	left: 135px !important;
+	}
 	#cozumelCarousel
 	{
     	margin-right: -30px !important; 
@@ -1458,6 +1521,14 @@ a
 		margin-left: 35px;
     	width: 325px;
     	object-position: 20% -102px;
+	}
+	
+	/* ----- TAF Sports Section -------- */
+	
+	#tafSportsFeature 
+	{
+		margin-left: 35px;
+    	width: 325px;
 	}
 	
 	/* ------ Cozumel Photo Section ----- */
